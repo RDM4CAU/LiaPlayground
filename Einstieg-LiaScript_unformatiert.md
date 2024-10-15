@@ -14,7 +14,8 @@ icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.pn
 
 Guten Morgen! :-)
 
-# A. Grundlage: Markdown
+A. Grundlage: Markdown
+
 LiaScript ist eine Erweiterung von Markdown. Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen.
 
 **Die Sytax, die von Markdown schon bekannt ist, könnt Ihr also auch hier anwenden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
@@ -23,7 +24,7 @@ LiaScript ist eine Erweiterung von Markdown. Die Entwickler:innen von LiaScript 
 
 
 
-## A.1 Inhalte strukturieren
+A.1 Inhalte strukturieren
 
 LiaScript arbeitet, wie Markdown, mit dem #️⃣ zur Einteilung von Inhalten in Kapitel. Wie in normalem Markdown auch definiert die Anzahl #️⃣ die Kapitelebenen.
 
@@ -45,6 +46,7 @@ LiaScript legt automatisch eine neue Seite für jede eingefügte Überschrift an
 
 Wenn nicht gewünscht ist, dass eine neue Seite angelegt wird, können Überschriften folgendermaßen erzwungen werden:
 
+
 ```
 <section>
 ## Wir brauchen hier eine Überschrift!
@@ -53,12 +55,16 @@ Hier folgt dann der Inhalt....
 
 </section>
 ```
+
 Ergebnis:
 
-<section>
-# Wir brauchen hier eine Überschrift!
+
+Wir brauchen hier eine Überschrift!
 
 Hier folgt dann der Inhalt.... 
+
+
+
 
 Das funktioniert auch mit `<article>` statt `<section>`:
 
@@ -71,14 +77,16 @@ Und noch ein bisschen mehr Inhalt...
 </article>
 ```
 
-</section>
 
-<article>
-## Wir brauchen hier eine weitere Überschrift!
+
+
+Ergebnis:
+
+Wir brauchen hier eine weitere Überschrift!
 
 Und noch ein bisschen mehr Inhalt... 
 
-</article>
+
 
 ---
 
@@ -93,10 +101,10 @@ Und so?
 ```
 
 Huch so geht es auch?
-===
+
 
 Und so?
----
+
 
 
 Absätze
@@ -117,9 +125,7 @@ Abstand
 ```
 ---
 Ich will mehr
-<br>
-<br>
-<br>
+
 Abstand.
 
 ---
@@ -129,12 +135,6 @@ Blöcke
 
 Die durch eine Leerzeile getrennten Absätze sind "Blöcke", denen mit html-Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
 
-<!-- style="color: red" -->
-Dieser Block soll in rotem Text erscheinen.
-
-<!-- style="background-color: lightblue;"-->
-Dieser Block soll einen hellblauen Hintergrund haben
-
 ```
 <!-- style="color: red" -->
 Dieser Block soll in rotem Text erscheinen.
@@ -144,7 +144,12 @@ Dieser Block soll einen hellblauen Hintergrund haben
 ```
 
 
-## A.2 Text formatieren
+Dieser Block soll in rotem Text erscheinen.
+
+
+Dieser Block soll einen hellblauen Hintergrund haben
+
+A.2 Text formatieren
 
 Texte formatieren könnt Ihr von Markdown her schon. Hier nochmal eine ganz schnell eine Wiederholung:
 
@@ -171,7 +176,7 @@ wird zu -->
 \*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>
 
 
-## A.3 Listen
+A.3 Listen
 
 - 2 Karotte(n)
 - 1 Zwiebel(- n)
@@ -191,29 +196,27 @@ wird zu -->
 
 
 
-## A.4 Tabellen
+A.4 Tabellen
 
 Nährwerte pro Portion: kcal 160
 
-<!-- data-transpose style="background-color: lightblue" -->
-| Stoff       | Gramm       |
-| ----------- | ----------- |
-| ~~Eiweiß~~  | 6.31 g      |
-| Fett        | 2.75 g      |
-| Kohlenhydr. | **26.48 g** | 
 
 
-## A.5 Hervorhebung und hevorgehobene Zitate
+Stoff        Gramm       
+~~Eiweiß~~   6.31 g      
+Fett         2.75 g     
+Kohlenhydr.  **26.48 g**  
 
->Die **schleswig-holsteinische Landesinitiative zum FDM** fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
->
->>https://fdm-sh.de/
 
->Die schleswig-holsteinische Landesinitiative zum FDM fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
->
-> -- https://fdm-sh.de/
+A.5 Hervorhebung und hevorgehobene Zitate
 
-# B. Animationen
+Die **schleswig-holsteinische Landesinitiative zum FDM** fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
+https://fdm-sh.de/
+
+Die schleswig-holsteinische Landesinitiative zum FDM fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
+https://fdm-sh.de/
+
+B. Animationen
 
 Animationsschritte werden mit `{{Nummer Animationsschritt}}`notiert. 
 
@@ -289,7 +292,7 @@ R1.3. (Meta)data meet domain-relevant community standards
 
 ***************
 
-# B.1 Animationen mit Sprachausgabe
+B.1 Animationen mit Sprachausgabe
 
 {{|>}}
 > Achtung! Jetzt gut aufpassen! 
@@ -329,49 +332,56 @@ F2: Data are described with rich metadata (defined by R1 below)
 F3: Metadata clearly and explicitly include the identifier of the data they describe
 F4: (Meta)data are registered or indexed in a searchable resource
 
-# C. Verweise
+C. Verweise
 Kurzer Blick auf die Verweismöglichkeiten...
 
-## C.1 Externe Verweise
+C.1 Externe Verweise
+
+einfachste Möglichkeit: Link einfügen:
+https://macau.uni-kiel.de/receive/macau_mods_00005047
+
+oder so:
+[Geschäftordnung der schleswig-holsteinische Landesinitiative](https://macau.uni-kiel.de/receive/macau_mods_00005047).
+
 
 Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr [hier](https://macau.uni-kiel.de/receive/macau_mods_00005047).
 
 
-## C.2 Interne Verweise
 
-Weiter geht es mit den [Verweisen auf Bilder](#B.3-sound-&-musik)
+C.2 Interne Verweise
 
-## C.2 Bilder
+Weiter geht es mit den [Verweisen](#c-verweise)
+
+C.2 Bilder
 
 ![Hier stehen tolle Leute auf der Digitalen Woche](https://fdm-sh.de/images/posts/2024-05-15_FDM-SH_DiWo_01.jpg "Tolle Leute auf der Digitalen Woche")
 
-![](https://fdm-sh.de/images/posts/2024-05-16_FDM-SH_DiWo_09.jpg)
 
 
+C.3 Sound & Musik
 
-## C.3 Sound & Musik
+[Teddybears - Sunshine](https://soundcloud.com/user34473679/sets/teddybears-sunshine)
 
-?[Teddybears - Sunshine](https://soundcloud.com/user34473679/sets/teddybears-sunshine)
+[GuteLehreBlogCAU](https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3)
 
-?[GuteLehreBlogCAU](https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3)
+Mit dem LiaScript LiveEditor könnt Ihr auch Audioaufnahmen machen und diese direkt in Euer Dokument einfügen! 
+
+C.4 Videos 
+
+[Das beliebte Snafu Video](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
+
+Mit dem LiaScript LiveEditor könnt Ihr auch Videoaufnahmen machen und diese direkt in Euer Dokument einfügen! 
 
 
-## C.4 Videos 
+C.5 A Modell, Simulationen etc.
 
-!?[Das beliebte Snafu Video](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
+[](https://sketchfab.com/3d-models/silver-tridrachm-of-metapontion-7021310c348c426c8a993760b64636bd)
 
-!?[](recording-2024-10-09T13:22:34.749Z.webm)
+[](https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html)
 
+[](https://rdm-games.gitlab.io/rdm-adventure/)
 
-## C.5 A Modell, Simulationen etc.
-
-??[](https://sketchfab.com/3d-models/silver-tridrachm-of-metapontion-7021310c348c426c8a993760b64636bd)
-
-??[](https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html)
-
-??[](https://rdm-games.gitlab.io/rdm-adventure/)
-
-## C.6 IFrames
+C.6 IFrames
 
 <iframe src="https://macau.uni-kiel.de/content/index.xml" width="100%" height="600" style="border:1px solid black;">
 </iframe>
@@ -381,7 +391,7 @@ Weiter geht es mit den [Verweisen auf Bilder](#B.3-sound-&-musik)
 <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Data Escape" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/5c9dd7e572992649167f237c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
 
 
-# D. Fragen und Quizze
+D. Fragen und Quizze
 
 
 **Single-Choice Quiz Beispiel:**
@@ -491,7 +501,7 @@ Die FAIT-Prinzipien stehen für F=[[findability]], A=[[accessibility]], I=[[inte
 
 
 
-# E. ASCII-Art
+E. ASCII-Art
 
 Mit Ascii kann man zeichnen 👌
 
@@ -508,7 +518,7 @@ Mit Ascii kann man zeichnen 👌
 
 
 
-# F. Frag die Künsteliche Intelligenz
+F. Frag die Künsteliche Intelligenz
 
 >**Wenn Du mal nicht weiter weißt...**
 >
