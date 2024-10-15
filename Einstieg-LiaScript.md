@@ -4,6 +4,7 @@ email: mail@mirdochmal.de
 version: 0.0.1
 date: 2024-10-17
 comment: Kleiner Einstieg in LiaScript
+narrator: Dutch female
 repository: Hier kannst Du Dein Repo angeben.
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
 -->
@@ -18,7 +19,6 @@ LiaScript ist eine Erweiterung von Markdown. André und Sebastian haben sich an 
 **Die Sytax, die Ihr von Markdown schon bekannt ist, könnt Ihr also auch hier anwenden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
 
 -> LiaScript Dokumente sind Textdokumente, deren Inhalt auch von einfachsten Texteditoren gelesen werden können. 
-
 
 
 
@@ -98,7 +98,7 @@ LiaScript braucht eine Leerzeile zwischen Textblöcken, um einen Absatz erkennen
 
 
 
-Mehrere Leerzeilen hintereinander werden nicht als mehrere Leerzeilen erkannt. Zusätzlicher Abstand muss mit `<br>` erzwungen werden:
+Mehrere Leerzeilen hintereinander werden nicht als mehrere Leerzeilen erkannt. Zusätzlicher Abstand muss z. B. mit `<br>` erzwungen werden:
 
 ```
 Ich will mehr
@@ -119,7 +119,7 @@ Abstand.
 Blöcke
 ===
 
-Die durch eine Leerzeile getrennten Absätze sind Blöcke, denen mit html Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
+Die durch eine Leerzeile getrennten Absätze sind "Blöcke", denen mit html-Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
 
 <!-- style="color: red" -->
 Dieser Block soll in rotem Text erscheinen.
@@ -165,7 +165,7 @@ wird zu -->
 
 ## A.3 Listen
 
-- 100 g 	Suppennudel- n (Buchstabennudeln)
+- 100 g Suppennudel- n (Buchstabennudeln)
 - 2 TL, gehäuft 	Gemü- sebrühepulver, instant
 - 1 Liter 	Wasser, evt- l. etwas mehr
 - 1 Zucchini
@@ -218,6 +218,14 @@ Nährwerte pro Portion: kcal 160
 > -- https://fdm-sh.de/
 
 # B. Animationen
+
+Animationsschritte werden mit `{{Nummer Animationsschritt}}`notiert. 
+
+**Achtung!** Die Animationen werden in der Ansicht "Textbook" nicht als Animationen angezeigt.
+
+Animationsschritte können ineinander verschachtelt werden. 
+
+Hier ein Beispiel:
 
 {{0}}
 >**F**indable
@@ -284,6 +292,17 @@ R1.2. (Meta)data are associated with detailed provenance
 R1.3. (Meta)data meet domain-relevant community standards
 
 ***************
+
+# B.1 Animationen mit Sprachausgabe
+LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`notiert. 
+
+Hier ein Beispiel:
+
+{{0}}
+>**F**indable
+
+--{{1}}--
+Der erste Schritt bei der (Wieder-)Verwendung von Daten besteht darin, sie zu finden. Metadaten und Daten sollten sowohl für Menschen als auch für Computer leicht zu finden sein. Maschinenlesbare Metadaten sind für das automatische Auffinden von Datensätzen und Diensten unerlässlich und daher ein wesentlicher Bestandteil des FAIRification-Prozesses.
 
 
 # C. Verweise
