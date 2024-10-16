@@ -4,8 +4,8 @@ email: mail@mirdochmal.de
 version: 0.0.1
 date: 2024-10-17
 comment: Kleiner Einstieg in LiaScript
-language: en
-narrator: US English Male
+language: de
+narrator: Deutsch Female
 repository: Hier kannst Du Dein Repo angeben.
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
 -->
@@ -123,18 +123,31 @@ Ich will mehr
 Abstand.
 
 ---
+...oder mit dem Backslash \\
+
+```
+Ich will mehr\
+\
+\
+\
+Abstand
+```
+
+---
+
+Ich will mehr\
+\
+\
+\
+Abstand
+
+---
 
 Blöcke
 ===
 
 Die durch eine Leerzeile getrennten Absätze sind "Blöcke", denen mit html-Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
 
-<!-- style="color: red" -->
-Dieser Block soll in rotem Text erscheinen.
-
-<!-- style="background-color: lightblue;"-->
-Dieser Block soll einen hellblauen Hintergrund haben
-
 ```
 <!-- style="color: red" -->
 Dieser Block soll in rotem Text erscheinen.
@@ -142,6 +155,12 @@ Dieser Block soll in rotem Text erscheinen.
 <!-- style="background-color: lightblue;"-->
 Dieser Block soll einen hellblauen Hintergrund haben
 ```
+<!-- style="color: red" -->
+Dieser Block soll in rotem Text erscheinen.
+
+<!-- style="background-color: lightblue;"-->
+Dieser Block soll einen hellblauen Hintergrund haben
+
 
 
 ## A.2 Text formatieren
@@ -195,7 +214,7 @@ wird zu -->
 
 Nährwerte pro Portion: kcal 160
 
-<!-- data-transpose style="background-color: lightblue" -->
+<!-- data-transpose style="color: red" -->
 | Stoff       | Gramm       |
 | ----------- | ----------- |
 | ~~Eiweiß~~  | 6.31 g      |
@@ -339,7 +358,7 @@ Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet
 
 ## C.2 Interne Verweise
 
-Weiter geht es mit den [Verweisen auf Bilder](#B.3-sound-&-musik)
+Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
 ## C.2 Bilder
 
@@ -356,11 +375,12 @@ Weiter geht es mit den [Verweisen auf Bilder](#B.3-sound-&-musik)
 ?[GuteLehreBlogCAU](https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3)
 
 
+
 ## C.4 Videos 
 
 !?[Das beliebte Snafu Video](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
 
-!?[](recording-2024-10-09T13:22:34.749Z.webm)
+
 
 
 ## C.5 A Modell, Simulationen etc.
