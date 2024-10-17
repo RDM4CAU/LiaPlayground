@@ -4,8 +4,8 @@ email: mail@mirdochmal.de
 version: 0.0.1
 date: 2024-10-17
 comment: Kleiner Einstieg in LiaScript
-language: en
-narrator: US English Male
+language: de
+narrator: Deutsch Female
 repository: Hier kannst Du Dein Repo angeben.
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
 -->
@@ -125,10 +125,24 @@ Abstand
 ```
 ---
 Ich will mehr
-
 Abstand.
 
 ---
+
+...oder mit dem Backslash \\
+
+```
+Ich will mehr\
+\
+\
+\
+Abstand
+```
+
+Ich will mehr
+Abstand
+
+
 
 Blöcke
 ===
@@ -146,26 +160,26 @@ Dieser Block soll einen hellblauen Hintergrund haben
 
 Dieser Block soll in rotem Text erscheinen.
 
-
 Dieser Block soll einen hellblauen Hintergrund haben
+
 
 A.2 Text formatieren
 
 Texte formatieren könnt Ihr von Markdown her schon. Hier nochmal eine ganz schnell eine Wiederholung:
 
-_kursiv_ --> Gleiches Ergebnis mit Unterstrich oder Sternchen: `_kursiv_` oder `*kursiv*`
+kursiv --> Gleiches Ergebnis mit Unterstrich oder Sternchen: `_kursiv_` oder `*kursiv*`
 
-__fett__ --> Gleiches Ergebnis mit doppeltem Unterstrich oder doppeltem Sternchen: `__fett__` oder `**fett**`
+fett --> Gleiches Ergebnis mit doppeltem Unterstrich oder doppeltem Sternchen: `__fett__` oder `**fett**`
 
-~durchgestrichen~ --> einfache Welle `~durchgestrichen~` 
+durchgestrichen --> einfache Welle `~durchgestrichen~` 
 
-~~unterstrichen~~ --> doppelte Welle `~~unterstrichen~~`
+unterstrichen --> doppelte Welle `~~unterstrichen~~`
 
-_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._ --> `_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._`
+Diese Formatierungsangaben sind beliebig kombinier- und verschachtelbar._ --> `_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._`
 
 :-O Sonderzeichen haben können funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. Als Escapezeichen fungiert der Backslash. 
 
-Beispiel: `\*dieser Text ist nicht kursiv\*` -> \*dieser Text ist nicht kursiv\*
+Beispiel: `\*dieser Text ist nicht kursiv\*` -> *dieser Text ist nicht kursiv*
 
 Also, wenn ich dem Sonderzeichen seine Funktion entziehen will und stattdessen das Sonderzeichen sehen will, setze ich einen Backlash davor:
 
@@ -178,21 +192,14 @@ wird zu -->
 
 A.3 Listen
 
-- 2 Karotte(n)
-- 1 Zwiebel(- n)
-- 3 Tomate(n)
-- evtl. Kräuter
-
-  1. frisch
-  2. getrocknet
-
-     - next
-       
-       - next next
-
-- Salz und Pfeffer
-- Paprikapulver
-- 1 EL Olivenöl 
+2 Karotte(n)
+1 Zwiebel(- n)
+3 Tomate(n)
+evtl. Kräuter
+frisch, getrocknet
+Salz und Pfeffer
+Paprikapulver
+1 EL Olivenöl 
 
 
 
@@ -292,15 +299,18 @@ R1.3. (Meta)data meet domain-relevant community standards
 
 ***************
 
+
+Wir können auch jedes einzelne Wort animieren. 
+
+
 B.1 Animationen mit Sprachausgabe
 
-{{|>}}
 > Achtung! Jetzt gut aufpassen! 
 
 LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`notiert. 
 
 
-___Hier ein Beispiel:___
+___Hier ein Beispiel___
 
 {{0}}
 >**F**indable
@@ -323,10 +333,10 @@ F4: (Meta)data are registered or indexed in a searchable resource
 
 ***************
 
---{{1}}--
+
 Der erste Schritt bei der (Wieder-)Verwendung von Daten besteht darin, sie zu finden. Metadaten und Daten sollten sowohl für Menschen als auch für Computer leicht zu finden sein. Maschinenlesbare Metadaten sind für das automatische Auffinden von Datensätzen und Diensten unerlässlich und daher ein wesentlicher Bestandteil des FAIRification-Prozesses.
 
- --{{2 English Female}}--
+
 F1: (Meta)data are assigned a globally unique and persistent identifier
 F2: Data are described with rich metadata (defined by R1 below)
 F3: Metadata clearly and explicitly include the identifier of the data they describe
@@ -341,45 +351,45 @@ einfachste Möglichkeit: Link einfügen:
 https://macau.uni-kiel.de/receive/macau_mods_00005047
 
 oder so:
-[Geschäftordnung der schleswig-holsteinische Landesinitiative](https://macau.uni-kiel.de/receive/macau_mods_00005047).
+Geschäftordnung der schleswig-holsteinische Landesinitiative https://macau.uni-kiel.de/receive/macau_mods_00005047
 
 
-Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr [hier](https://macau.uni-kiel.de/receive/macau_mods_00005047).
+Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr hier(https://macau.uni-kiel.de/receive/macau_mods_00005047).
 
 
 
 C.2 Interne Verweise
 
-Weiter geht es mit den [Verweisen](#c-verweise)
+Weiter geht es mit den Verweisen
 
 C.2 Bilder
 
-![Hier stehen tolle Leute auf der Digitalen Woche](https://fdm-sh.de/images/posts/2024-05-15_FDM-SH_DiWo_01.jpg "Tolle Leute auf der Digitalen Woche")
+https://fdm-sh.de/images/posts/2024-05-15_FDM-SH_DiWo_01.jpg 
 
-
+https://forschungsdaten.info/fileadmin/kooperationen/bwfdm/fdm/4-veroeffentlichung-archivieren/FAIR.PNG
 
 C.3 Sound & Musik
 
-[Teddybears - Sunshine](https://soundcloud.com/user34473679/sets/teddybears-sunshine)
+https://soundcloud.com/user34473679/sets/teddybears-sunshine
 
-[GuteLehreBlogCAU](https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3)
+https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3
 
 Mit dem LiaScript LiveEditor könnt Ihr auch Audioaufnahmen machen und diese direkt in Euer Dokument einfügen! 
 
 C.4 Videos 
 
-[Das beliebte Snafu Video](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
+https://www.youtube.com/watch?v=66oNv_DJuPc 
 
 Mit dem LiaScript LiveEditor könnt Ihr auch Videoaufnahmen machen und diese direkt in Euer Dokument einfügen! 
 
 
 C.5 A Modell, Simulationen etc.
 
-[](https://sketchfab.com/3d-models/silver-tridrachm-of-metapontion-7021310c348c426c8a993760b64636bd)
+https://sketchfab.com/3d-models/silver-tridrachm-of-metapontion-7021310c348c426c8a993760b64636bd
 
-[](https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html)
+https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html)
 
-[](https://rdm-games.gitlab.io/rdm-adventure/)
+https://rdm-games.gitlab.io/rdm-adventure/
 
 C.6 IFrames
 
@@ -397,35 +407,31 @@ D. Fragen und Quizze
 **Single-Choice Quiz Beispiel:**
 Wie heißt die Hauptstadt von Frankreich?
 
-    - [( )] London
-    - [( )] Berlin
-    - [(X)] Paris
-    - [( )] Rom
-    - [( )] Kiel
-***********************************************************************
->Toll! das ist Richtig ! 🔆
+    London
+    Berlin
+    Paris
+    Rom
+    Kiel
 
-***********************************************************************
 
 ---
 
 <div style="background-color: lightblue;padding: 25px">
 **Multiple-Choice Quiz Beispiel:** Which of the following are primary colors?
 
-- [[X]] Red
-- [[X]] Blue
-- [[ ]] Green
-- [[X]] Yellow
-- [[?]] Grün ist falsch
+Red
+Blue
+Green
+Yellow
+Grün ist falsch
 
 </div>
 
 ---
 
->**Text-Quiz Beipsiel:**
->Frage: Wie heißt der Open Access Textpublikationsdienst der Christian-Albrechts-Universität zu Kiel (Nutze Großbuchstaben)?
->
->[[MACAU]]
+**Text-Quiz Beipsiel:**
+Frage: Wie heißt der Open Access Textpublikationsdienst der Christian-Albrechts-Universität zu Kiel (Nutze Großbuchstaben)?
+
 
 ---
 
@@ -433,7 +439,7 @@ Wie heißt die Hauptstadt von Frankreich?
 
 **Vervollständige den folgenden Satz:**
 
-Leitprinzipien im FDM sind die [[FAIR]]-Prinzipien.
+Leitprinzipien im FDM sind die FAIR-Prinzipien.
 
 ---
 
@@ -441,7 +447,7 @@ Leitprinzipien im FDM sind die [[FAIR]]-Prinzipien.
 
 **Vervollständige den folgenden Satz:**
 
-Die FAIT-Prinzipien stehen für F=[[findability]], A=[[accessibility]], I=[[interoperability]], and R=[[reusability]].
+Die FAIT-Prinzipien stehen für F=findability, A=accessibility, I=interoperability, and R=reusability.
 
 </div>
 
@@ -451,7 +457,7 @@ Die FAIT-Prinzipien stehen für F=[[findability]], A=[[accessibility]], I=[[inte
 
 **Welche Leitlinie der DFG Leitlinien zur guten wissenschaftlichen Praxis beschäftigt sich mit der Dokumentation?**
 
-[[ Leitlinie 1 | Leitlinie 5 | Leitlinie 3 | (Leitlinie 12) ]]
+Leitlinie 1  Leitlinie 5  Leitlinie 3  Leitlinie 12
 ***********************************************************************
 ![Party-Gif](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjNtY3A1aHI4djV1cnhoeHBpNmk5MGFzengzMDI0c3RpNWt6dDg4ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fUQ4rhUZJYiQsas6WD/giphy.webp)
 
