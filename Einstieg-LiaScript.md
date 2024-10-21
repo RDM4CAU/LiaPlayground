@@ -1,12 +1,12 @@
 <!--
-author: alle zusammen
-email: mail@mirdochmal.de
+author: Britta Petersen
+email: b.petersen@rz.uni-kiel.de
 version: 0.0.1
 date: 2024-10-17
-comment: Kleiner Einstieg in LiaScript
+comment: Ergebnis der Hands-On-Phase; Kleiner Einstieg in LiaScript
 language: de
 narrator: Deutsch Female
-repository: Hier kannst Du Dein Repo angeben.
+repository: https://github.com/RDM4CAU/LiaPlayground
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
 -->
 
