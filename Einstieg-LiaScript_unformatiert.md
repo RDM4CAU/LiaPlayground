@@ -18,9 +18,9 @@ A. Grundlage: Markdown
 
 LiaScript ist eine Erweiterung von Markdown. Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen.
 
-**Die Sytax, die von Markdown schon bekannt ist, könnt Ihr also auch hier anwenden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
+**Die Sytax, die ggf. von Markdown schon bekannt ist, kann also auch hier angewendet werden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
 
--> LiaScript-Dokumente sind Textdokumente, deren Inhalt auch von einfachsten Texteditoren gelesen werden können. 
+-> LiaScript-Dokumente sind Textdokumente, deren Inhalt in einfachsten Texteditoren gelesen und bearbeitet werden können. 
 
 
 
@@ -88,7 +88,7 @@ Und noch ein bisschen mehr Inhalt...
 
 
 
----
+
 
 😨Zu kompliziert? Na, gut. Es geht auch noch anders:
 
@@ -123,11 +123,11 @@ Ich will mehr
 <br>
 Abstand
 ```
----
+
 Ich will mehr
 Abstand.
 
----
+
 
 ...oder mit dem Backslash \\
 
@@ -141,6 +141,44 @@ Abstand
 
 Ich will mehr
 Abstand
+
+Horizontale Linien: `---`
+
+---
+
+
+A.2 Text formatieren
+
+Textfomatierungen folgen 
+
+kursiv --> Gleiches Ergebnis mit Unterstrich oder Sternchen: `_kursiv_` oder `*kursiv*`
+
+fett --> Gleiches Ergebnis mit doppeltem Unterstrich oder doppeltem Sternchen: `__fett__` oder `**fett**`
+
+durchgestrichen --> einfache Welle `~durchgestrichen~` 
+
+unterstrichen --> doppelte Welle `~~unterstrichen~~`
+
+Diese Formatierungsangaben sind beliebig kombinier- und verschachtelbar. --> `_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._`
+
+:-O Sonderzeichen können Funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. 
+
+Als Escapezeichen fungiert der Backslash: 
+
+Beispiel: `\*dieser Text ist nicht kursiv\*` -> *dieser Text ist nicht kursiv*
+
+Also, wenn ich dem Sonderzeichen seine Funktion entziehen will und stattdessen das Sonderzeichen sehen will, setze ich einen Backlash davor:
+
+`\*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>`
+
+wird zu --> 
+
+\*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>
+
+
+Um ein Wort oder einen Satz als Code zu kennzeichnen, wird es in Backticks (`) eingeschlossen.
+
+`Dies ist ein Code`
 
 
 
@@ -161,33 +199,6 @@ Dieser Block soll einen hellblauen Hintergrund haben
 Dieser Block soll in rotem Text erscheinen.
 
 Dieser Block soll einen hellblauen Hintergrund haben
-
-
-A.2 Text formatieren
-
-Texte formatieren könnt Ihr von Markdown her schon. Hier nochmal eine ganz schnell eine Wiederholung:
-
-kursiv --> Gleiches Ergebnis mit Unterstrich oder Sternchen: `_kursiv_` oder `*kursiv*`
-
-fett --> Gleiches Ergebnis mit doppeltem Unterstrich oder doppeltem Sternchen: `__fett__` oder `**fett**`
-
-durchgestrichen --> einfache Welle `~durchgestrichen~` 
-
-unterstrichen --> doppelte Welle `~~unterstrichen~~`
-
-Diese Formatierungsangaben sind beliebig kombinier- und verschachtelbar._ --> `_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._`
-
-:-O Sonderzeichen haben können funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. Als Escapezeichen fungiert der Backslash. 
-
-Beispiel: `\*dieser Text ist nicht kursiv\*` -> *dieser Text ist nicht kursiv*
-
-Also, wenn ich dem Sonderzeichen seine Funktion entziehen will und stattdessen das Sonderzeichen sehen will, setze ich einen Backlash davor:
-
-`\*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>`
-
-wird zu --> 
-
-\*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>
 
 
 A.3 Listen
@@ -222,6 +233,16 @@ https://fdm-sh.de/
 
 Die schleswig-holsteinische Landesinitiative zum FDM fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
 https://fdm-sh.de/
+
+Verschachtelte Hervorhebung und weitere Elemente
+
+Hervorebungen können ineinander verschachtelt werden und weitere Elemente enthalten, wie z. B.
+
+Listen
+Tabellen
+
+
+
 
 B. Animationen
 
@@ -300,14 +321,14 @@ R1.3. (Meta)data meet domain-relevant community standards
 ***************
 
 
-Wir können auch jedes einzelne Wort animieren. 
+Wir können auch Inline {5}{animieren}.
 
 
 B.1 Animationen mit Sprachausgabe
 
 > Achtung! Jetzt gut aufpassen! 
 
-LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`notiert. 
+LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`
 
 
 ___Hier ein Beispiel___
@@ -342,6 +363,8 @@ F2: Data are described with rich metadata (defined by R1 below)
 F3: Metadata clearly and explicitly include the identifier of the data they describe
 F4: (Meta)data are registered or indexed in a searchable resource
 
+
+
 C. Verweise
 Kurzer Blick auf die Verweismöglichkeiten...
 
@@ -354,13 +377,13 @@ oder so:
 Geschäftordnung der schleswig-holsteinische Landesinitiative https://macau.uni-kiel.de/receive/macau_mods_00005047
 
 
-Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr hier(https://macau.uni-kiel.de/receive/macau_mods_00005047).
+Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr hier https://macau.uni-kiel.de/receive/macau_mods_00005047.
 
 
 
 C.2 Interne Verweise
 
-Weiter geht es mit den Verweisen
+Weiter geht es mit den Verweisen auf Bilder.
 
 C.2 Bilder
 
@@ -372,15 +395,13 @@ C.3 Sound & Musik
 
 https://soundcloud.com/user34473679/sets/teddybears-sunshine
 
-https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3
-
-Mit dem LiaScript LiveEditor könnt Ihr auch Audioaufnahmen machen und diese direkt in Euer Dokument einfügen! 
+Mit dem LiaScript LiveEditor können auch Audioaufnahmen gemacht und direkt ins Dokument übernommen werden. 
 
 C.4 Videos 
 
 https://www.youtube.com/watch?v=66oNv_DJuPc 
 
-Mit dem LiaScript LiveEditor könnt Ihr auch Videoaufnahmen machen und diese direkt in Euer Dokument einfügen! 
+Mit dem LiaScript LiveEditor können auch Videoaufnahmen gemacht und direkt ins Dokument übernommen werden. 
 
 
 C.5 A Modell, Simulationen etc.

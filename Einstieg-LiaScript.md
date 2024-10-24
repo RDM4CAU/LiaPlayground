@@ -17,9 +17,9 @@ Guten Morgen! :-)
 # A. Grundlage: Markdown
 LiaScript ist eine Erweiterung von Markdown. Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen.
 
-**Die Sytax, die von Markdown schon bekannt ist, könnt Ihr also auch hier anwenden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
+**Die Sytax, die ggf. von Markdown schon bekannt ist, kann also auch hier angewendet werden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
 
--> LiaScript-Dokumente sind Textdokumente, deren Inhalt auch von einfachsten Texteditoren gelesen werden können. 
+-> LiaScript-Dokumente sind Textdokumente, deren Inhalt in einfachsten Texteditoren gelesen und bearbeitet werden können.  
 
 
 
@@ -143,23 +143,11 @@ Abstand
 
 ---
 
-Blöcke
-===
 
-Die durch eine Leerzeile getrennten Absätze sind "Blöcke", denen mit html-Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
+Horizontale Linien: `---`
 
-```
-<!-- style="color: red" -->
-Dieser Block soll in rotem Text erscheinen.
+---
 
-<!-- style="background-color: lightblue;"-->
-Dieser Block soll einen hellblauen Hintergrund haben
-```
-<!-- style="color: red" -->
-Dieser Block soll in rotem Text erscheinen.
-
-<!-- style="background-color: lightblue;"-->
-Dieser Block soll einen hellblauen Hintergrund haben
 
 
 
@@ -177,7 +165,7 @@ __fett__ --> Gleiches Ergebnis mit doppeltem Unterstrich oder doppeltem Sternche
 
 _Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._ --> `_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._`
 
-:-O Sonderzeichen haben können funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. Als Escapezeichen fungiert der Backslash. 
+:-O Sonderzeichen können Funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. Als Escapezeichen fungiert der Backslash. 
 
 Beispiel: `\*dieser Text ist nicht kursiv\*` -> \*dieser Text ist nicht kursiv\*
 
@@ -189,6 +177,28 @@ wird zu -->
 
 \*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>
 
+Um ein Wort oder einen Satz als Code zu kennzeichnen, wird es in Backticks (`) eingeschlossen.
+
+`Dies ist ein Code`
+
+Blöcke
+===
+
+Die durch eine Leerzeile getrennten Absätze sind "Blöcke", denen mit html-Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
+
+```
+<!-- style="color: red" -->
+Dieser Block soll in rotem Text erscheinen.
+
+<!-- style="background-color: lightblue;"-->
+Dieser Block soll einen hellblauen Hintergrund haben
+```
+
+<!-- style="color: red" -->
+Dieser Block soll in rotem Text erscheinen.
+
+<!-- style="background-color: lightblue;"-->
+Dieser Block soll einen hellblauen Hintergrund haben
 
 ## A.3 Listen
 
@@ -231,6 +241,18 @@ Nährwerte pro Portion: kcal 160
 >Die schleswig-holsteinische Landesinitiative zum FDM fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
 >
 > -- https://fdm-sh.de/
+
+>>**Verschachtelte Hervorhebung und weitere Elemente**
+>
+>Hervorebungen können ineinander verschachtelt werden und weitere Elemente enthalten, wie z. B.
+>
+>> - Listen
+>>
+>> - Tabellen
+>
+>| Column 1 | Column 2 | Column 3 |
+>| -------- | :------: | -------: |
+>| Text     |   Text   |     Text |
 
 # B. Animationen
 
@@ -308,12 +330,14 @@ R1.3. (Meta)data meet domain-relevant community standards
 
 ***************
 
+Wir können auch Inline {5}{animieren}.
+
 # B.1 Animationen mit Sprachausgabe
 
 {{|>}}
 > Achtung! Jetzt gut aufpassen! 
 
-LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`notiert. 
+LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--` 
 
 
 ___Hier ein Beispiel:___
@@ -339,14 +363,19 @@ F4: (Meta)data are registered or indexed in a searchable resource
 
 ***************
 
+--{{0}}--
+**F**indable
+
 --{{1}}--
 Der erste Schritt bei der (Wieder-)Verwendung von Daten besteht darin, sie zu finden. Metadaten und Daten sollten sowohl für Menschen als auch für Computer leicht zu finden sein. Maschinenlesbare Metadaten sind für das automatische Auffinden von Datensätzen und Diensten unerlässlich und daher ein wesentlicher Bestandteil des FAIRification-Prozesses.
 
- --{{2 English Female}}--
+--{{2 US English Male}}--
 F1: (Meta)data are assigned a globally unique and persistent identifier
 F2: Data are described with rich metadata (defined by R1 below)
 F3: Metadata clearly and explicitly include the identifier of the data they describe
 F4: (Meta)data are registered or indexed in a searchable resource
+
+
 
 # C. Verweise
 Kurzer Blick auf die Verweismöglichkeiten...
