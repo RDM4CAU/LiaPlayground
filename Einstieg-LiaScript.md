@@ -382,7 +382,14 @@ Kurzer Blick auf die Verweismöglichkeiten...
 
 ## C.1 Externe Verweise
 
-Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr [hier](https://macau.uni-kiel.de/receive/macau_mods_00005047).
+einfachste Möglichkeit: Link einfügen:
+https://liascript.github.io/ 
+
+oder so:
+[Geschäftordnung der schleswig-holsteinische Landesinitiative zum Forschungsdatenmanagement](https://macau.uni-kiel.de/receive/macau_mods_00005047)
+
+Beitrag von André Dietrich und Sebastian Zug auf OERinfo:
+[Warum braucht offene Bildung eine eigene Sprache? Wie LiaScript OER befördern kann](https://open-educational-resources.de/warum-braucht-offene-bildung-eine-eigene-sprache-warum-liascript/)
 
 
 ## C.2 Interne Verweise
@@ -391,9 +398,9 @@ Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
 ## C.2 Bilder
 
-![Hier stehen tolle Leute auf der Digitalen Woche](https://fdm-sh.de/images/posts/2024-05-15_FDM-SH_DiWo_01.jpg "Tolle Leute auf der Digitalen Woche")
+![5 V-Freiheiten für Offenheit](https://open-educational-resources.de/wp-content/uploads/20180111Infografik_5V.jpg "5 V-Freiheiten für Offenheit“  unter CC BY 4.0 basierend auf „Defining the ‘Open’ in Open Content and Open Educational Resources“ von David Wiley auf www.opencontent.org/definition/ unter CC BY 4.0.")
 
-![](https://fdm-sh.de/images/posts/2024-05-16_FDM-SH_DiWo_09.jpg)
+![3,5″-Diskette](https://mainzed.pages.gitlab.rlp.net/open-educational-resources/cms/img/uploads/3-5_zoll_floppy_disc.jpg)
 
 
 
@@ -401,13 +408,13 @@ Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
 ?[Teddybears - Sunshine](https://soundcloud.com/user34473679/sets/teddybears-sunshine)
 
-?[GuteLehreBlogCAU](https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3)
-
 
 
 ## C.4 Videos 
 
-!?[Das beliebte Snafu Video](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
+!?[OER Erklärvideo](https://www.youtube.com/watch?v=1WnZD7E8FKY "Was versteht man eigentlich unter Open Educational Resources (OER)? Lizenziert unter der Creative Commons-Lizenz CC BY-SA 4.0. ")
+
+!?[Data Sharing and Management](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
 
 
 

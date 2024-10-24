@@ -321,7 +321,7 @@ R1.3. (Meta)data meet domain-relevant community standards
 ***************
 
 
-Wir können auch Inline {5}{animieren}.
+Wir können auch Inline 5 animieren.
 
 
 B.1 Animationen mit Sprachausgabe
@@ -371,13 +371,13 @@ Kurzer Blick auf die Verweismöglichkeiten...
 C.1 Externe Verweise
 
 einfachste Möglichkeit: Link einfügen:
-https://macau.uni-kiel.de/receive/macau_mods_00005047
+https://liascript.github.io/ 
 
 oder so:
-Geschäftordnung der schleswig-holsteinische Landesinitiative https://macau.uni-kiel.de/receive/macau_mods_00005047
+Geschäftordnung der schleswig-holsteinische Landesinitiative zum Forschungsdatenmanagement https://macau.uni-kiel.de/receive/macau_mods_00005047
 
-
-Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr hier https://macau.uni-kiel.de/receive/macau_mods_00005047.
+Beitrag von André Dietrich und Sebastian Zug auf OERinfo:
+Warum braucht offene Bildung eine eigene Sprache? Wie LiaScript OER befördern kann https://open-educational-resources.de/warum-braucht-offene-bildung-eine-eigene-sprache-warum-liascript/
 
 
 
@@ -387,9 +387,15 @@ Weiter geht es mit den Verweisen auf Bilder.
 
 C.2 Bilder
 
-https://fdm-sh.de/images/posts/2024-05-15_FDM-SH_DiWo_01.jpg 
+5 V-Freiheiten für Offenheit
+https://open-educational-resources.de/wp-content/uploads/20180111Infografik_5V.jpg 
 
-https://forschungsdaten.info/fileadmin/kooperationen/bwfdm/fdm/4-veroeffentlichung-archivieren/FAIR.PNG
+"5 V-Freiheiten für Offenheit, veröffentlicht unter CC BY 4.0 basierend auf „Defining the ‘Open’ in Open Content and Open Educational Resources“ von David Wiley auf www.opencontent.org/definition/ unter CC BY 4.0."
+
+Diskette
+https://mainzed.pages.gitlab.rlp.net/open-educational-resources/cms/img/uploads/3-5_zoll_floppy_disc.jpg
+
+
 
 C.3 Sound & Musik
 
@@ -399,9 +405,13 @@ Mit dem LiaScript LiveEditor können auch Audioaufnahmen gemacht und direkt ins 
 
 C.4 Videos 
 
-https://www.youtube.com/watch?v=66oNv_DJuPc 
+OER Erklärvideo
+https://www.youtube.com/watch?v=1WnZD7E8FKY 
 
-Mit dem LiaScript LiveEditor können auch Videoaufnahmen gemacht und direkt ins Dokument übernommen werden. 
+Was versteht man eigentlich unter Open Educational Resources (OER)? Lizenziert unter der Creative Commons-Lizenz CC BY-SA 4.0.
+
+Data Sharing and Management
+https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video"
 
 
 C.5 A Modell, Simulationen etc.
