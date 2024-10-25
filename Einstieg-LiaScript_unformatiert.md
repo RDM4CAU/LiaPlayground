@@ -507,35 +507,6 @@ Leitlinie 1  Leitlinie 5  Leitlinie 3  Leitlinie 12
 - [    [ ]           [X]          [ ]        [X]     ]  Zugang zu Daten, inkl. Authentifizierung und Autorisierung sollte klar beschrieben sein.
 - [    [X]           [ ]          [ ]        [X]     ]  Dateinamen sollten auf den Inhalt verweisen.
 
----
-
-<div style="background-color:rgba(255, 230, 179, 0.6);padding: 25px;border: no;"> ✎ Beantworte mithilfe des [OPAC](https://katalog.ub.uni-kiel.de/) folgende Fragen:
-
-1. Aus welchem Jahr ist das älteste Buch von Albert Einstein, das im OPAC zu finden ist?
-
-    [[1905]]
-    [[?]] *Sieh dir einmal die Suchfilter über dem Eingabefeld an. Gibt es dort vielleicht einen schnellen Weg, nur einen bestimmten Autor anzeigen zu lassen?*
-
-2. Dein Dozent empfiehlt dir für deine Hausarbeit einen bestimmten Aufsatz aus dem Buch *""Wollten Sie auch immer schon einmal pestverseuchte Kühe auf ihre Gegner werfen?": eine fachwissenschaftliche Annährung an Geschichte im Computerspiel"*. Suche das Buch mithilfe von unterschiedlichen Stichworten. Unter welcher Signatur steht das Buch in der Universitätsbibliothek?
-
-    [[Bp 2115]]
-
-3. Welche Schlagwörter findest du unter dem Eintrag des Buches?
-
-    [[X]] Computerspiel
-    [[ ]] Freizeit
-    [[ ]] Geschichte
-    [[X]] Geschichtsdarstellung
-    [[X]] Geschichtswissenschaft
-
-4. Klicke einmal auf die unterschiedlichen Schlagwörter und sieh dir die Ergebnisse an: Was für eine Funktion erfüllen die verlinkten Schlagwörter? 
-
-    [[Sie sind Stichwörter aus dem Titel des jeweiligen Werks und erleichtern die Suche nach dem Eintrag.
-    |  (Sie sind normierte Vokabeln und beschreiben den Inhalt des jeweiligen Werks unabhängig vom Titel. Auf diese Weise erleichtern sie die Suche nach ähnlichen Werken.)
-    ]]
-    
-</div>
-
 
 
 E. ASCII-Art
