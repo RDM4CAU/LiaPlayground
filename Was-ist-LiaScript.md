@@ -44,6 +44,24 @@ icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.pn
 
 ******************
 
+{{3-4}}
+**********************
+
+<!--
+style="width: 100%; max-width: 860px; display: block; margin-left: auto; margin-right: auto;"
+-->
+```ascii
+
+      Wunsch nach                                             Wunsch nach
+  einfacher Umsetzung  -----------> Konflikt <----------- spezifischen Elementen
+                                       |                       im Material
+                                       |
+                                       v
+                              OER als Lösungsansatz
+```
+
+**********************
+
 
 ## OER
 
@@ -86,44 +104,33 @@ __Kritik an der 5V Definiotion__
 > _2. Die Verwaltung und Auffindbarkeit von OER Inhalten ist dadurch nicht erfasst._
 
 **********************
-
-{{3-4}}
-**********************
-
-<!--
-style="width: 100%; max-width: 860px; display: block; margin-left: auto; margin-right: auto;"
--->
-```ascii
-
-      Wunsch nach                                             Wunsch nach
-  einfacher Umsetzung  -----------> Konflikt <----------- spezifischen Elementen
-                                       |                       im Material
-                                       |
-                                       v
-                              OER als Lösungsansatz
-```
-
-**********************
     
 ## Bisherige Praxis
 
-![Powerpoint](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Microsoft_PowerPoint_2013-2019_logo.svg/529px-Microsoft_PowerPoint_2013-2019_logo.svg.png) 
-![Prezi](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Prezi_logo_transparent_2012.svg/480px-Prezi_logo_transparent_2012.svg.png) 
+Die Praxis besteht oft auf statische, nicht-interaktive und schwer veränderbare Lehr- und Lernmaterialien:
+
+![PDF](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/195px-PDF_file_icon.svg.png) ![Prezi](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Prezi_logo_transparent_2012.svg/240px-Prezi_logo_transparent_2012.svg.png) ![Powerpoint](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Microsoft_PowerPoint_2013-2019_logo.svg/264px-Microsoft_PowerPoint_2013-2019_logo.svg.png)
 
 
 ## Anforderungen
 
 {{1-3}}
+*********************
+
+Um die OER Anforderungen umzusetzen, werden folgende Anforderungen an Lehr- und Lernmaterialien gestellt.
+
 > 1. Materialien müssen transformierbar sein, um eine Wiederverwendung zu ermöglichen. (_Verarbeiten/Verwenden/Verbreiten_)
 > 2. Materialien brauchen Metadaten, um auffindbar zu sein. (_Verbreiten_)
 > 3. Materialien brauchen offenkundige Versionierungen (_Verwalten_)
+
+*********************
 
 {{2-3}}
 __Offensichtlich brauchen wir Formate, die neben den positiven Aspekten von Textdarstellungen auch das erweiterte Set von Anforderungen abdecken.__
 
 ## LiaScript
 
-{{1}}
+{{1-2}}
 **********************
 LiaScript ist eine freie Erweiterung der Auszeichnungssprache [Markdown](https://de.wikipedia.org/wiki/Markdown). Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen. Mit LiaScript lassen sich interaktive und ansprechende Lehr- und Lehrinhalte erstellen, die ohne die Verwendung eines Servers im Netz verbreitet werden können.
 
@@ -133,18 +140,18 @@ LiaScript ist eine freie Erweiterung der Auszeichnungssprache [Markdown](https:/
 
 **********************
 
-{{2}}
+{{2-4}}
 **********************
 
 LiaScript erfüllt die oben genannten Anforderungen:
 
 > 1. Materialien müssen transformierbar sein, um eine Wiederverwendung zu ermöglichen. (_Verarbeiten/Verwenden/Verbreiten_) --> LiaScript kann in andere Formate wie PDF, Docx, HTML, SCORM u.v.m konvertiert werden
 > 2. Materialien brauchen Metadaten, um auffindbar zu sein. (_Verbreiten_) --> LiaScript kann einen Metadatenblock am Anfang jedes Dokuments enthalten, der es auffindbar macht
-> 3. Materialien brauchen offenkundige Versionierungen (_Verwalten_) --> LiaScript ist als einfaches Textformat über Git lückenlos Versionierbar
+> 3. Materialien brauchen offenkundige Versionierungen (_Verwalten_) --> LiaScript ist als einfaches Textformat über Git lückenlos versionierbar
 
 **********************
 
-{{3}}
+{{3-4}}
 **********************
 Und weitere:
 
