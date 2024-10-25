@@ -18,9 +18,9 @@ A. Grundlage: Markdown
 
 LiaScript ist eine Erweiterung von Markdown. Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen.
 
-**Die Sytax, die von Markdown schon bekannt ist, könnt Ihr also auch hier anwenden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
+**Die Sytax, die ggf. von Markdown schon bekannt ist, kann also auch hier angewendet werden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
 
--> LiaScript-Dokumente sind Textdokumente, deren Inhalt auch von einfachsten Texteditoren gelesen werden können. 
+-> LiaScript-Dokumente sind Textdokumente, deren Inhalt in einfachsten Texteditoren gelesen und bearbeitet werden können. 
 
 
 
@@ -88,7 +88,7 @@ Und noch ein bisschen mehr Inhalt...
 
 
 
----
+
 
 😨Zu kompliziert? Na, gut. Es geht auch noch anders:
 
@@ -123,11 +123,11 @@ Ich will mehr
 <br>
 Abstand
 ```
----
+
 Ich will mehr
 Abstand.
 
----
+
 
 ...oder mit dem Backslash \\
 
@@ -141,6 +141,44 @@ Abstand
 
 Ich will mehr
 Abstand
+
+Horizontale Linien: `---`
+
+---
+
+
+A.2 Text formatieren
+
+Textfomatierungen folgen 
+
+kursiv --> Gleiches Ergebnis mit Unterstrich oder Sternchen: `_kursiv_` oder `*kursiv*`
+
+fett --> Gleiches Ergebnis mit doppeltem Unterstrich oder doppeltem Sternchen: `__fett__` oder `**fett**`
+
+durchgestrichen --> einfache Welle `~durchgestrichen~` 
+
+unterstrichen --> doppelte Welle `~~unterstrichen~~`
+
+Diese Formatierungsangaben sind beliebig kombinier- und verschachtelbar. --> `_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._`
+
+:-O Sonderzeichen können Funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. 
+
+Als Escapezeichen fungiert der Backslash: 
+
+Beispiel: `\*dieser Text ist nicht kursiv\*` -> *dieser Text ist nicht kursiv*
+
+Also, wenn ich dem Sonderzeichen seine Funktion entziehen will und stattdessen das Sonderzeichen sehen will, setze ich einen Backlash davor:
+
+`\*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>`
+
+wird zu --> 
+
+\*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>
+
+
+Um ein Wort oder einen Satz als Code zu kennzeichnen, wird es in Backticks (`) eingeschlossen.
+
+`Dies ist ein Code`
 
 
 
@@ -161,33 +199,6 @@ Dieser Block soll einen hellblauen Hintergrund haben
 Dieser Block soll in rotem Text erscheinen.
 
 Dieser Block soll einen hellblauen Hintergrund haben
-
-
-A.2 Text formatieren
-
-Texte formatieren könnt Ihr von Markdown her schon. Hier nochmal eine ganz schnell eine Wiederholung:
-
-kursiv --> Gleiches Ergebnis mit Unterstrich oder Sternchen: `_kursiv_` oder `*kursiv*`
-
-fett --> Gleiches Ergebnis mit doppeltem Unterstrich oder doppeltem Sternchen: `__fett__` oder `**fett**`
-
-durchgestrichen --> einfache Welle `~durchgestrichen~` 
-
-unterstrichen --> doppelte Welle `~~unterstrichen~~`
-
-Diese Formatierungsangaben sind beliebig kombinier- und verschachtelbar._ --> `_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._`
-
-:-O Sonderzeichen haben können funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. Als Escapezeichen fungiert der Backslash. 
-
-Beispiel: `\*dieser Text ist nicht kursiv\*` -> *dieser Text ist nicht kursiv*
-
-Also, wenn ich dem Sonderzeichen seine Funktion entziehen will und stattdessen das Sonderzeichen sehen will, setze ich einen Backlash davor:
-
-`\*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>`
-
-wird zu --> 
-
-\*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>
 
 
 A.3 Listen
@@ -222,6 +233,16 @@ https://fdm-sh.de/
 
 Die schleswig-holsteinische Landesinitiative zum FDM fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
 https://fdm-sh.de/
+
+Verschachtelte Hervorhebung und weitere Elemente
+
+Hervorebungen können ineinander verschachtelt werden und weitere Elemente enthalten, wie z. B.
+
+Listen
+Tabellen
+
+
+
 
 B. Animationen
 
@@ -300,14 +321,14 @@ R1.3. (Meta)data meet domain-relevant community standards
 ***************
 
 
-Wir können auch jedes einzelne Wort animieren. 
+Wir können auch Inline 5 animieren.
 
 
 B.1 Animationen mit Sprachausgabe
 
 > Achtung! Jetzt gut aufpassen! 
 
-LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`notiert. 
+LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`
 
 
 ___Hier ein Beispiel___
@@ -342,54 +363,64 @@ F2: Data are described with rich metadata (defined by R1 below)
 F3: Metadata clearly and explicitly include the identifier of the data they describe
 F4: (Meta)data are registered or indexed in a searchable resource
 
+
+
 C. Verweise
 Kurzer Blick auf die Verweismöglichkeiten...
 
 C.1 Externe Verweise
 
 einfachste Möglichkeit: Link einfügen:
-https://macau.uni-kiel.de/receive/macau_mods_00005047
+https://liascript.github.io/ 
 
 oder so:
-Geschäftordnung der schleswig-holsteinische Landesinitiative https://macau.uni-kiel.de/receive/macau_mods_00005047
+Geschäftordnung der schleswig-holsteinische Landesinitiative zum Forschungsdatenmanagement https://macau.uni-kiel.de/receive/macau_mods_00005047
 
-
-Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr hier(https://macau.uni-kiel.de/receive/macau_mods_00005047).
+Beitrag von André Dietrich und Sebastian Zug auf OERinfo:
+Warum braucht offene Bildung eine eigene Sprache? Wie LiaScript OER befördern kann https://open-educational-resources.de/warum-braucht-offene-bildung-eine-eigene-sprache-warum-liascript/
 
 
 
 C.2 Interne Verweise
 
-Weiter geht es mit den Verweisen
+Weiter geht es mit den Verweisen auf Bilder.
 
 C.2 Bilder
 
-https://fdm-sh.de/images/posts/2024-05-15_FDM-SH_DiWo_01.jpg 
+5 V-Freiheiten für Offenheit
+https://open-educational-resources.de/wp-content/uploads/20180111Infografik_5V.jpg 
 
-https://forschungsdaten.info/fileadmin/kooperationen/bwfdm/fdm/4-veroeffentlichung-archivieren/FAIR.PNG
+"5 V-Freiheiten für Offenheit, veröffentlicht unter CC BY 4.0 basierend auf „Defining the ‘Open’ in Open Content and Open Educational Resources“ von David Wiley auf www.opencontent.org/definition/ unter CC BY 4.0."
+
+Diskette
+https://mainzed.pages.gitlab.rlp.net/open-educational-resources/cms/img/uploads/3-5_zoll_floppy_disc.jpg
+
+
 
 C.3 Sound & Musik
 
 https://soundcloud.com/user34473679/sets/teddybears-sunshine
 
-https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3
-
-Mit dem LiaScript LiveEditor könnt Ihr auch Audioaufnahmen machen und diese direkt in Euer Dokument einfügen! 
+Mit dem LiaScript LiveEditor können auch Audioaufnahmen gemacht und direkt ins Dokument übernommen werden. 
 
 C.4 Videos 
 
-https://www.youtube.com/watch?v=66oNv_DJuPc 
+OER Erklärvideo
+https://www.youtube.com/watch?v=1WnZD7E8FKY 
 
-Mit dem LiaScript LiveEditor könnt Ihr auch Videoaufnahmen machen und diese direkt in Euer Dokument einfügen! 
+Was versteht man eigentlich unter Open Educational Resources (OER)? Lizenziert unter der Creative Commons-Lizenz CC BY-SA 4.0.
+
+Data Sharing and Management
+https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video"
 
 
-C.5 A Modell, Simulationen etc.
+C.5 A Modelle, Simulationen etc.
 
 https://sketchfab.com/3d-models/silver-tridrachm-of-metapontion-7021310c348c426c8a993760b64636bd
 
 https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html)
 
-https://rdm-games.gitlab.io/rdm-adventure/
+https://umap.openstreetmap.de/de/map/new/?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=true&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#10/54.3526/10.1129
 
 C.6 IFrames
 
@@ -398,7 +429,7 @@ C.6 IFrames
 
 <iframe src="https://answergarden.ch/embed/4191023" width="100%" height="600px" style="border: none;" scrolling="no" frameborder="0" title="AnswerGarden" allowTransparency="true"><p><a href="https://answergarden.ch/4191023">Go to AnswerGarden</a></p></iframe>
 
-<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Data Escape" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/5c9dd7e572992649167f237c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+https://umap.openstreetmap.de/de/map/new/?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=true&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#10/54.3526/10.1129
 
 
 D. Fragen und Quizze
@@ -475,35 +506,6 @@ Leitlinie 1  Leitlinie 5  Leitlinie 3  Leitlinie 12
 - [    [ ]           [ ]          [ ]        [X]     ]  Daten sollten mit einer eindeutigen Lizenz versehen sein.
 - [    [ ]           [X]          [ ]        [X]     ]  Zugang zu Daten, inkl. Authentifizierung und Autorisierung sollte klar beschrieben sein.
 - [    [X]           [ ]          [ ]        [X]     ]  Dateinamen sollten auf den Inhalt verweisen.
-
----
-
-<div style="background-color:rgba(255, 230, 179, 0.6);padding: 25px;border: no;"> ✎ Beantworte mithilfe des [OPAC](https://katalog.ub.uni-kiel.de/) folgende Fragen:
-
-1. Aus welchem Jahr ist das älteste Buch von Albert Einstein, das im OPAC zu finden ist?
-
-    [[1905]]
-    [[?]] *Sieh dir einmal die Suchfilter über dem Eingabefeld an. Gibt es dort vielleicht einen schnellen Weg, nur einen bestimmten Autor anzeigen zu lassen?*
-
-2. Dein Dozent empfiehlt dir für deine Hausarbeit einen bestimmten Aufsatz aus dem Buch *""Wollten Sie auch immer schon einmal pestverseuchte Kühe auf ihre Gegner werfen?": eine fachwissenschaftliche Annährung an Geschichte im Computerspiel"*. Suche das Buch mithilfe von unterschiedlichen Stichworten. Unter welcher Signatur steht das Buch in der Universitätsbibliothek?
-
-    [[Bp 2115]]
-
-3. Welche Schlagwörter findest du unter dem Eintrag des Buches?
-
-    [[X]] Computerspiel
-    [[ ]] Freizeit
-    [[ ]] Geschichte
-    [[X]] Geschichtsdarstellung
-    [[X]] Geschichtswissenschaft
-
-4. Klicke einmal auf die unterschiedlichen Schlagwörter und sieh dir die Ergebnisse an: Was für eine Funktion erfüllen die verlinkten Schlagwörter? 
-
-    [[Sie sind Stichwörter aus dem Titel des jeweiligen Werks und erleichtern die Suche nach dem Eintrag.
-    |  (Sie sind normierte Vokabeln und beschreiben den Inhalt des jeweiligen Werks unabhängig vom Titel. Auf diese Weise erleichtern sie die Suche nach ähnlichen Werken.)
-    ]]
-    
-</div>
 
 
 

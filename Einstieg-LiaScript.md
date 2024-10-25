@@ -17,9 +17,9 @@ Guten Morgen! :-)
 # A. Grundlage: Markdown
 LiaScript ist eine Erweiterung von Markdown. Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen.
 
-**Die Sytax, die von Markdown schon bekannt ist, könnt Ihr also auch hier anwenden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
+**Die Sytax, die ggf. von Markdown schon bekannt ist, kann also auch hier angewendet werden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
 
--> LiaScript-Dokumente sind Textdokumente, deren Inhalt auch von einfachsten Texteditoren gelesen werden können. 
+-> LiaScript-Dokumente sind Textdokumente, deren Inhalt in einfachsten Texteditoren gelesen und bearbeitet werden können.  
 
 
 
@@ -143,23 +143,11 @@ Abstand
 
 ---
 
-Blöcke
-===
 
-Die durch eine Leerzeile getrennten Absätze sind "Blöcke", denen mit html-Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
+Horizontale Linien: `---`
 
-```
-<!-- style="color: red" -->
-Dieser Block soll in rotem Text erscheinen.
+---
 
-<!-- style="background-color: lightblue;"-->
-Dieser Block soll einen hellblauen Hintergrund haben
-```
-<!-- style="color: red" -->
-Dieser Block soll in rotem Text erscheinen.
-
-<!-- style="background-color: lightblue;"-->
-Dieser Block soll einen hellblauen Hintergrund haben
 
 
 
@@ -177,7 +165,7 @@ __fett__ --> Gleiches Ergebnis mit doppeltem Unterstrich oder doppeltem Sternche
 
 _Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._ --> `_Diese ~~Formatierungsangaben~~ sind **beliebig** kombinier- und verschachtelbar._`
 
-:-O Sonderzeichen haben können funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. Als Escapezeichen fungiert der Backslash. 
+:-O Sonderzeichen können Funktionen haben! Daher benötigen wir ein sogenanntes Escapezeichen, um Sonderzeichen bei Bedarf ihre Funtion zu entziehen. Als Escapezeichen fungiert der Backslash. 
 
 Beispiel: `\*dieser Text ist nicht kursiv\*` -> \*dieser Text ist nicht kursiv\*
 
@@ -189,6 +177,28 @@ wird zu -->
 
 \*, \~, \_, \#, \{, \}, \[, \], \|, \`, \$, \@, \\, \<, \>
 
+Um ein Wort oder einen Satz als Code zu kennzeichnen, wird es in Backticks (`) eingeschlossen.
+
+`Dies ist ein Code`
+
+Blöcke
+===
+
+Die durch eine Leerzeile getrennten Absätze sind "Blöcke", denen mit html-Kommentaren jeweils noch Eigenschaften zugewiesen werden können, z. B. eine andere Schriftfarbe oder eine andere Hintergrundfarbe.
+
+```
+<!-- style="color: red" -->
+Dieser Block soll in rotem Text erscheinen.
+
+<!-- style="background-color: lightblue;"-->
+Dieser Block soll einen hellblauen Hintergrund haben
+```
+
+<!-- style="color: red" -->
+Dieser Block soll in rotem Text erscheinen.
+
+<!-- style="background-color: lightblue;"-->
+Dieser Block soll einen hellblauen Hintergrund haben
 
 ## A.3 Listen
 
@@ -231,6 +241,18 @@ Nährwerte pro Portion: kcal 160
 >Die schleswig-holsteinische Landesinitiative zum FDM fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
 >
 > -- https://fdm-sh.de/
+
+>>**Verschachtelte Hervorhebung und weitere Elemente**
+>
+>Hervorebungen können ineinander verschachtelt werden und weitere Elemente enthalten, wie z. B.
+>
+>> - Listen
+>>
+>> - Tabellen
+>
+>| Column 1 | Column 2 | Column 3 |
+>| -------- | :------: | -------: |
+>| Text     |   Text   |     Text |
 
 # B. Animationen
 
@@ -308,12 +330,14 @@ R1.3. (Meta)data meet domain-relevant community standards
 
 ***************
 
+Wir können auch Inline {5}{animieren}.
+
 # B.1 Animationen mit Sprachausgabe
 
 {{|>}}
 > Achtung! Jetzt gut aufpassen! 
 
-LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`notiert. 
+LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--` 
 
 
 ___Hier ein Beispiel:___
@@ -339,21 +363,33 @@ F4: (Meta)data are registered or indexed in a searchable resource
 
 ***************
 
+--{{0}}--
+**F**indable
+
 --{{1}}--
 Der erste Schritt bei der (Wieder-)Verwendung von Daten besteht darin, sie zu finden. Metadaten und Daten sollten sowohl für Menschen als auch für Computer leicht zu finden sein. Maschinenlesbare Metadaten sind für das automatische Auffinden von Datensätzen und Diensten unerlässlich und daher ein wesentlicher Bestandteil des FAIRification-Prozesses.
 
- --{{2 English Female}}--
+--{{2 US English Male}}--
 F1: (Meta)data are assigned a globally unique and persistent identifier
 F2: Data are described with rich metadata (defined by R1 below)
 F3: Metadata clearly and explicitly include the identifier of the data they describe
 F4: (Meta)data are registered or indexed in a searchable resource
+
+
 
 # C. Verweise
 Kurzer Blick auf die Verweismöglichkeiten...
 
 ## C.1 Externe Verweise
 
-Die Geschäftordnung der schleswig-holsteinische Landesinitiative zum FDM findet Ihr [hier](https://macau.uni-kiel.de/receive/macau_mods_00005047).
+einfachste Möglichkeit: Link einfügen:
+https://liascript.github.io/ 
+
+oder so:
+[Geschäftordnung der schleswig-holsteinische Landesinitiative zum Forschungsdatenmanagement](https://macau.uni-kiel.de/receive/macau_mods_00005047)
+
+Beitrag von André Dietrich und Sebastian Zug auf OERinfo:
+[Warum braucht offene Bildung eine eigene Sprache? Wie LiaScript OER befördern kann](https://open-educational-resources.de/warum-braucht-offene-bildung-eine-eigene-sprache-warum-liascript/)
 
 
 ## C.2 Interne Verweise
@@ -362,9 +398,9 @@ Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
 ## C.2 Bilder
 
-![Hier stehen tolle Leute auf der Digitalen Woche](https://fdm-sh.de/images/posts/2024-05-15_FDM-SH_DiWo_01.jpg "Tolle Leute auf der Digitalen Woche")
+![5 V-Freiheiten für Offenheit](https://open-educational-resources.de/wp-content/uploads/20180111Infografik_5V.jpg "5 V-Freiheiten für Offenheit“  unter CC BY 4.0 basierend auf „Defining the ‘Open’ in Open Content and Open Educational Resources“ von David Wiley auf www.opencontent.org/definition/ unter CC BY 4.0.")
 
-![](https://fdm-sh.de/images/posts/2024-05-16_FDM-SH_DiWo_09.jpg)
+![3,5″-Diskette](https://mainzed.pages.gitlab.rlp.net/open-educational-resources/cms/img/uploads/3-5_zoll_floppy_disc.jpg)
 
 
 
@@ -372,13 +408,13 @@ Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
 ?[Teddybears - Sunshine](https://soundcloud.com/user34473679/sets/teddybears-sunshine)
 
-?[GuteLehreBlogCAU](https://www.gute-lehre-lehramt.uni-kiel.de/wp-content/uploads/2021/09/Lisa-zu-Lerntheorien.mp3)
-
 
 
 ## C.4 Videos 
 
-!?[Das beliebte Snafu Video](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
+!?[OER Erklärvideo](https://www.youtube.com/watch?v=1WnZD7E8FKY "Was versteht man eigentlich unter Open Educational Resources (OER)? Lizenziert unter der Creative Commons-Lizenz CC BY-SA 4.0. ")
+
+!?[Data Sharing and Management](https://www.youtube.com/watch?v=66oNv_DJuPc "Das beliebte Snafu Video")
 
 
 
@@ -389,7 +425,7 @@ Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
 ??[](https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_all.html)
 
-??[](https://rdm-games.gitlab.io/rdm-adventure/)
+??[](https://umap.openstreetmap.de/de/map/new/?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=true&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#10/54.3526/10.1129)
 
 ## C.6 IFrames
 
@@ -398,7 +434,10 @@ Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
 <iframe src="https://answergarden.ch/embed/4191023" width="100%" height="600px" style="border: none;" scrolling="no" frameborder="0" title="AnswerGarden" allowTransparency="true"><p><a href="https://answergarden.ch/4191023">Go to AnswerGarden</a></p></iframe>
 
-<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Data Escape" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/5c9dd7e572992649167f237c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+<iframe src="https://umap.openstreetmap.de/de/map/new/?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=true&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#10/54.3526/10.1129" width="100%" height="600" style="border:1px solid black;">
+</iframe>
+
+
 
 
 # D. Fragen und Quizze
@@ -481,33 +520,6 @@ Die FAIT-Prinzipien stehen für F=[[findability]], A=[[accessibility]], I=[[inte
 - [    [X]           [ ]          [ ]        [X]     ]  Dateinamen sollten auf den Inhalt verweisen.
 
 ---
-
-<div style="background-color:rgba(255, 230, 179, 0.6);padding: 25px;border: no;"> ✎ Beantworte mithilfe des [OPAC](https://katalog.ub.uni-kiel.de/) folgende Fragen:
-
-1. Aus welchem Jahr ist das älteste Buch von Albert Einstein, das im OPAC zu finden ist?
-
-    [[1905]]
-    [[?]] *Sieh dir einmal die Suchfilter über dem Eingabefeld an. Gibt es dort vielleicht einen schnellen Weg, nur einen bestimmten Autor anzeigen zu lassen?*
-
-2. Dein Dozent empfiehlt dir für deine Hausarbeit einen bestimmten Aufsatz aus dem Buch *""Wollten Sie auch immer schon einmal pestverseuchte Kühe auf ihre Gegner werfen?": eine fachwissenschaftliche Annährung an Geschichte im Computerspiel"*. Suche das Buch mithilfe von unterschiedlichen Stichworten. Unter welcher Signatur steht das Buch in der Universitätsbibliothek?
-
-    [[Bp 2115]]
-
-3. Welche Schlagwörter findest du unter dem Eintrag des Buches?
-
-    [[X]] Computerspiel
-    [[ ]] Freizeit
-    [[ ]] Geschichte
-    [[X]] Geschichtsdarstellung
-    [[X]] Geschichtswissenschaft
-
-4. Klicke einmal auf die unterschiedlichen Schlagwörter und sieh dir die Ergebnisse an: Was für eine Funktion erfüllen die verlinkten Schlagwörter? 
-
-    [[Sie sind Stichwörter aus dem Titel des jeweiligen Werks und erleichtern die Suche nach dem Eintrag.
-    |  (Sie sind normierte Vokabeln und beschreiben den Inhalt des jeweiligen Werks unabhängig vom Titel. Auf diese Weise erleichtern sie die Suche nach ähnlichen Werken.)
-    ]]
-    
-</div>
 
 
 
