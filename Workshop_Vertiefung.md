@@ -9,6 +9,8 @@ language: de
 narrator: Deutsch Female
 repository: https://github.com/RDM4CAU/LiaPlayground
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
+import: https://raw.githubusercontent.com/LiaTemplates/LiveEdit-Embeddings/refs/heads/main/README.md
+import: https://raw.githubusercontent.com/LiaTemplates/citations/main/README.md
 -->
 
 # Liascriptdateien erstellen
@@ -101,13 +103,124 @@ und setzt sich wie folgt zusammen:
 
 Der Exporter erzeugt eine zip-Datei im selben Ordner wie die Ausgangsdatei.
 
-## Erweiterungen
+## Kommentare
+
+Kommentare, also nur für den Bearbeiter sichtbare Ergänzungen, lassen sich mit HTML Kommentaren einfügen. Dabei gilt zurzeit die Einschränkung, dass keine Sonderzeichen verwendet werden dürfen außer **:**, **-** und **_**. Also
+
+``` html
+<!--
+Geht: siehste
+-->
+
+<!--
+Geht nicht.
+-->
+
+```
+
+# Erweiterungen
+
+Es existieren einige Erweiterungen (Templates) von Liascript für spezifische Aufgaben. Mit ihnen wird die Syntax von LiaScript so erweitert, dass sie die Aufgaben abdeckt. Sie sind nicht Teil des offiziellen LiaScript-Pakets. Die Erweiterungen sind auf [GitHub](https://github.com/liaTemplates). Um sie zu benutzen müssen die Erweiterungen im Header der LiaScript-Datei importiert werden:
+
+``` html
+<!--
+author: Richard Diebel, Britta Petersen
+email: diebel@ub.uni-kiel.de, b.petersen@rz.uni-kiel.de
+version: 0.0.1
+date: 2024-11-27
+link: https://raw.githubusercontent.com/RDM4CAU/Intro-to-RDM/refs/heads/main/cau-style.css
+comment: Liacript Vertiefung
+language: de
+narrator: Deutsch Female
+repository: https://github.com/RDM4CAU/LiaPlayground
+icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
+import: https://raw.githubusercontent.com/LiaTemplates/LiveEdit-Embeddings/refs/heads/main/README.md
+-->
+```
+
+## Live Editor
+
+``` markdown @embed
+# Hello World
+
+This is a simple example that shows how to use the LiveEditor.
+```
+
+## Zitationen und Literaturverzeichnis
+
+Dies ist ein Satz
+```bibtex @cite
+@book{johnson2019book,
+  title={Nordelbingen},
+  author={Beuckers, Klaus Gereon},
+  year={2024},
+  publisher={Universitätsverlag Kiel },
+  address={Kiel},
+  url={https://doi.org/10.38072/2941-3362/i90} 
+}
+```
+der nicht endet.
+
+```bibtex @bibliography.style(ieee)
+@book{johnson2019book,
+  title     = {The Complete Guide to Examples},
+  author    = {Johnson, Emily},
+  year      = {2019},
+  publisher = {Academic Press},
+  address   = {New York},
+  url       = {https://doi.org/10.1000/conf.2021.123}
+}
+
+@book{texbook,
+  author    = {Donald E. Knuth},
+  year      = {1986},
+  title     = {The {\TeX} Book},
+  publisher = {Addison-Wesley Professional}
+}
+```
+
+```bibtex @bibliography.style(harvard1)
+@book{johnson2019book,
+  title     = {The Complete Guide to Examples},
+  author    = {Johnson, Emily},
+  year      = {2019},
+  publisher = {Academic Press},
+  address   = {New York},
+  url       = {https://doi.org/10.1000/conf.2021.123}
+}
+
+@book{texbook,
+  author    = {Donald E. Knuth},
+  year      = {1986},
+  title     = {The {\TeX} Book},
+  publisher = {Addison-Wesley Professional}
+}
+```
+
+```bibtex @bibliography.style(vancouver)
+@book{johnson2019book,
+  title     = {The Complete Guide to Examples},
+  author    = {Johnson, Emily},
+  year      = {2019},
+  publisher = {Academic Press},
+  address   = {New York},
+  url       = {https://doi.org/10.1000/conf.2021.123}
+}
+
+@book{texbook,
+  author    = {Donald E. Knuth},
+  year      = {1986},
+  title     = {The {\TeX} Book},
+  publisher = {Addison-Wesley Professional}
+}
+```
+
+
+### Rest
 
 - Reaktionsgleichungen (Chemie) (KekuleJS)
 - Noten usw.
 - Code (ausführbar)
-- Literaturverzeichnis (?)
-- Kommentarfunktion (Britta forscht nach)
 
 Britta
 - Beispieldokumente
