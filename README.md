@@ -15,6 +15,9 @@ Dieses Repo enthält Materialien zur Einführung in die ersten Schritte mit [Lia
 Britta Petersen
 https://orcid.org/0000-0002-0355-2594
 
+Richard Diebel
+https://orcid.org/0000-0001-7525-7175
+
 ## License 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless otherwise stated.
 
