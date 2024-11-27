@@ -93,6 +93,7 @@ Agenda heute 💪
 >   - Tabellen
 >   - Verweise
 >   - Einbindung von Medien (Audio, Video, Simulationen, Modelle)
+>   - Annimation
 >   - Quizzes
 >   - individuelles Styling mit html Kommentaren
 
