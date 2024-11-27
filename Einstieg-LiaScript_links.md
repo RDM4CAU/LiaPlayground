@@ -94,6 +94,7 @@ Agenda heute 💪
 >   - Verweise
 >   - Einbindung von Medien (Audio, Video, Simulationen, Modelle)
 >   - Annimation
+>   - Sprachausgaben
 >   - Quizzes
 >   - individuelles Styling mit html Kommentaren
 
