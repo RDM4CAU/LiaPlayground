@@ -4,6 +4,7 @@ email: diebel@ub.uni-kiel.de, b.petersen@rz.uni-kiel.de
 version: 0.0.1
 date: 2024-11-27
 link: https://raw.githubusercontent.com/RDM4CAU/Intro-to-RDM/refs/heads/main/cau-style.css
+      https://cdn.jsdelivr.net/gh/LiaTemplates/KekuleJS/kekule/themes/default/kekule.css
 comment: Liacript Vertiefung
 language: de
 narrator: Deutsch Female
@@ -11,6 +12,7 @@ repository: https://github.com/RDM4CAU/LiaPlayground
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
 import: https://raw.githubusercontent.com/LiaTemplates/LiveEdit-Embeddings/refs/heads/main/README.md
 import: https://raw.githubusercontent.com/LiaTemplates/citations/main/README.md
+import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
 -->
 
 # Liascriptdateien erstellen
@@ -103,21 +105,6 @@ und setzt sich wie folgt zusammen:
 
 Der Exporter erzeugt eine zip-Datei im selben Ordner wie die Ausgangsdatei.
 
-## Kommentare
-
-Kommentare, also nur für den Bearbeiter sichtbare Ergänzungen, lassen sich mit HTML Kommentaren einfügen. Dabei gilt zurzeit die Einschränkung, dass keine Sonderzeichen verwendet werden dürfen außer **:**, **-** und **_**. Also
-
-``` html
-<!--
-Geht: siehste
--->
-
-<!--
-Geht nicht.
--->
-
-```
-
 # Erweiterungen
 
 Es existieren einige Erweiterungen (Templates) von Liascript für spezifische Aufgaben. Mit ihnen wird die Syntax von LiaScript so erweitert, dass sie die Aufgaben abdeckt. Sie sind nicht Teil des offiziellen LiaScript-Pakets. Die Erweiterungen sind auf [GitHub](https://github.com/liaTemplates). Um sie zu benutzen müssen die Erweiterungen im Header der LiaScript-Datei importiert werden:
@@ -138,6 +125,21 @@ import: https://raw.githubusercontent.com/LiaTemplates/LiveEdit-Embeddings/refs/
 -->
 ```
 
+## Kommentare
+
+Kommentare, also nur für den Bearbeiter sichtbare Ergänzungen, lassen sich mit HTML Kommentaren einfügen. Dabei gilt zurzeit die Einschränkung, dass keine Sonderzeichen verwendet werden dürfen außer **:**, **-** und **_**. Also
+
+``` html
+<!--
+Geht: siehste
+-->
+
+<!--
+Geht nicht.
+-->
+
+```
+
 ## Live Editor
 
 ``` markdown @embed
@@ -147,6 +149,8 @@ This is a simple example that shows how to use the LiveEditor.
 ```
 
 ## Zitationen und Literaturverzeichnis
+
+> import: https://raw.githubusercontent.com/LiaTemplates/citations/main/README.md
 
 Dies ist ein Satz
 ```bibtex @cite
@@ -159,68 +163,118 @@ Dies ist ein Satz
   url={https://doi.org/10.38072/2941-3362/i90} 
 }
 ```
-der nicht endet.
+mit einer eingebetteten Quelle.
 
-```bibtex @bibliography.style(ieee)
+
+```` markdown
+Dies ist ein Satz
+```bibtex @cite
 @book{johnson2019book,
-  title     = {The Complete Guide to Examples},
-  author    = {Johnson, Emily},
-  year      = {2019},
-  publisher = {Academic Press},
-  address   = {New York},
-  url       = {https://doi.org/10.1000/conf.2021.123}
-}
-
-@book{texbook,
-  author    = {Donald E. Knuth},
-  year      = {1986},
-  title     = {The {\TeX} Book},
-  publisher = {Addison-Wesley Professional}
+  title={Nordelbingen},
+  author={Beuckers, Klaus Gereon},
+  year={2024},
+  publisher={Universitätsverlag Kiel },
+  address={Kiel},
+  url={https://doi.org/10.38072/2941-3362/i90} 
 }
 ```
+````
+
+Bibliographie
+----
+
+**Havard**
 
 ```bibtex @bibliography.style(harvard1)
 @book{johnson2019book,
-  title     = {The Complete Guide to Examples},
-  author    = {Johnson, Emily},
-  year      = {2019},
-  publisher = {Academic Press},
-  address   = {New York},
-  url       = {https://doi.org/10.1000/conf.2021.123}
-}
-
-@book{texbook,
-  author    = {Donald E. Knuth},
-  year      = {1986},
-  title     = {The {\TeX} Book},
-  publisher = {Addison-Wesley Professional}
+  title={Nordelbingen},
+  author={Beuckers, Klaus Gereon},
+  year={2024},
+  publisher={Universitätsverlag Kiel },
+  address={Kiel},
+  url={https://doi.org/10.38072/2941-3362/i90} 
 }
 ```
+
+**Vancouver**
 
 ```bibtex @bibliography.style(vancouver)
 @book{johnson2019book,
-  title     = {The Complete Guide to Examples},
-  author    = {Johnson, Emily},
-  year      = {2019},
-  publisher = {Academic Press},
-  address   = {New York},
-  url       = {https://doi.org/10.1000/conf.2021.123}
-}
-
-@book{texbook,
-  author    = {Donald E. Knuth},
-  year      = {1986},
-  title     = {The {\TeX} Book},
-  publisher = {Addison-Wesley Professional}
+  title={Nordelbingen},
+  author={Beuckers, Klaus Gereon},
+  year={2024},
+  publisher={Universitätsverlag Kiel },
+  address={Kiel},
+  url={https://doi.org/10.38072/2941-3362/i90} 
 }
 ```
 
+**Ieee**
 
-### Rest
+```bibtex @bibliography.style(ieee)
+@book{johnson2019book,
+  title={Nordelbingen},
+  author={Beuckers, Klaus Gereon},
+  year={2024},
+  publisher={Universitätsverlag Kiel },
+  address={Kiel},
+  url={https://doi.org/10.38072/2941-3362/i90} 
+}
+```
 
-- Reaktionsgleichungen (Chemie) (KekuleJS)
-- Noten usw.
-- Code (ausführbar)
+Ganze Bibliographie
+----
 
-Britta
-- Beispieldokumente
+```
+@[bibliography.link.style(ieee)](./files/bibtex.bib)
+```
+
+@[bibliography.link.style(ieee)](./files/bibtex.bib)
+
+## Code
+
+Code wird über drei Backticks am Anfang und am Ende eingefügt. Es werden eine Reihe an Sprachen unterstützt, die mit einem Leerzeichen getrennt am Anfang des Codeblocks angegeben wird - hier: javascript. Will man einen Codeblock zeigen ohne ihn auszuführen, kann man davor und danach vier Backticks setzen und die Sprache Markdown angeben. Code wird ausführbar, wenn am Ende ein `<script>@input</script>` steht. Inlinecode wird mit einem Backtick markiert.
+
+```` markdown
+``` javascript
+let text = 'Hello, World';
+text;
+```
+<script>@input</script>
+````
+
+``` javascript
+let text = 'Hello, World';
+text;
+```
+<script>@input</script>
+
+Pyodide Erweiterung für Python
+----
+
+> import: https://raw.githubusercontent.com/LiaTemplates/Pyodide/master/README.md
+
+```` markdown
+``` python
+import sys
+
+for i in range(5):
+	print("Hello", 'World #', i)
+
+sys.version
+```
+@Pyodide.eval
+````
+
+``` python
+import sys
+
+for i in range(5):
+	print("Hello", 'World #', i)
+
+sys.version
+```
+@Pyodide.eval
+
+
+
