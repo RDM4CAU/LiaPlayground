@@ -92,7 +92,7 @@ Agenda heute 💪
 >   - Listen
 >   - Tabellen
 >   - Verweise
->   - Einbindung von Medien (Audio, Video, Simulationen, Modelle)
+>   - Einbindung von Medien (Abbildungen, Audio, Video, Simulationen, Modelle)
 >   - Annimation
 >   - Sprachausgaben
 >   - Quizzes
