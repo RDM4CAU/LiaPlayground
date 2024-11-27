@@ -1,8 +1,8 @@
 <!--
 author: Britta Petersen, Richard Diebel
-email: b.petersen@rz.uni-kiel.de
-version: 0.0.1
-date: 2024-10-21
+email: b.petersen@rz.uni-kiel.de, diebel@ub.uni-kiel.de
+version: 0.0.2
+date: 2024-11-27
 comment: Ablauf und Links, Workshop Open Educational Resources mit LiaScript Teil I (Einstieg) und II (Vertiefung)
 language: de
 narrator: Deutsch Female
@@ -83,6 +83,8 @@ Agenda heute 💪
 
 > - **Was ist LiaScript?**
 >
+> - [**LiaScript Live Editor**](https://liascript.github.io/LiveEditor/?/edit/do4c42HSc8W3Jv45wWcHX6rX)
+>
 > - **Grundlagen der Formatierung**
 >
 >   - Überschriften
@@ -96,15 +98,22 @@ Agenda heute 💪
 
 <br>
 
+<iframe src="https://liascript.github.io/LiveEditor/?/edit/do4c42HSc8W3Jv45wWcHX6rX" width="100%" height="600" style="border:1px solid black;">
+</iframe>
+
+### Recap Classroom
+
+Eine Funktion, die im Einstieg nicht besprochen wurde, ist die LiaScript CLassroom Funktion, die wir noch einmal ganz kurz ausprobieren...
+
 {{1-2}}
 *********************
 **Was ist LiaScript?**
 
-[[Ein Tool für die Entwicklung von Selbstlernmaterial]] Ein Tool für die Entwicklung von Selbstlernmaterial
-[[Ein KI-Tool]] Ein KI-Tool
-[[Eine Erweiterung der Auszeichnungssprache Markdown]] Eine Erweiterung der Auszeichnungssprache Markdown
-[[Eine komplierte Programmiersprache]] Eine komplierte Programmiersprache
-[[Ein Open Source Tool]] Ein Open Source Tool
+[[Tool für Selbstlernmaterial]] Ein Tool für die Entwicklung von Selbstlernmaterial
+[[KI-Tool]] Ein KI-Tool
+[[Erweiterung Markdown]] Eine Erweiterung der Auszeichnungssprache Markdown
+[[komplierte Programmiersprache]] Eine komplierte Programmiersprache
+[[Open Source Tool]] Ein Open Source Tool
 
 *********************
 
@@ -123,8 +132,8 @@ Agenda heute 💪
 *********************
 **Welche der folgenden Auszeichnungen kodiert ein Single-Choice-Quizz in LiaSCript?**
 
-[[Multiple]] [[x]]
-[[Single]] [(x)]
+[[Multiple-Choice]] [[x]]
+[[Single-Choice]] [(x)]
 [[Text-Gap]] [[Single-Choice]]
 
 *********************
@@ -218,7 +227,7 @@ https://zenodo.org/records/6373596
 
 </section>
 
-## Weitere Ressourcen...
+# Weitere Ressourcen...
 
 **LiaScript Dokumentation**
 https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#1
