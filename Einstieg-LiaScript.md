@@ -3,14 +3,14 @@ author: Britta Petersen
 email: b.petersen@rz.uni-kiel.de
 version: 0.0.1
 date: 2024-10-17
-comment: Ergebnis der Hands-On-Phase; Kleiner Einstieg in LiaScript
+comment: Ergebnis der Hands-On-Phase; Einstieg in LiaScript
 language: de
 narrator: Deutsch Female
 repository: https://github.com/RDM4CAU/LiaPlayground
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
 -->
 
-# LiaScript Einstieg 
+# LiaScript Einstieg
 
 Guten Morgen! :-)
 
@@ -41,7 +41,7 @@ Es sind maximal 6 Ebenen möglich.
 
 __Achtung!__
 
-LiaScript legt automatisch eine neue Seite für jede eingefügte Überschrift an, egal auf welcher Ebene. 
+LiaScript legt automatisch eine neue Seite für jede eingefügte Überschrift an, egal auf welcher Ebene.
 
 Wenn nicht gewünscht ist, dass eine neue Seite angelegt wird, können Überschriften folgendermaßen erzwungen werden:
 
@@ -153,7 +153,7 @@ Horizontale Linien: `---`
 
 ## A.2 Text formatieren
 
-Texte formatieren könnt Ihr von Markdown her schon. Hier nochmal eine ganz schnell eine Wiederholung:
+Auszeichnungen für Textformatierungen sind vielleicht von Markdown her schon bekannt. Hier nochmal eine ganz schnell eine Wiederholung:
 
 _kursiv_ --> Gleiches Ergebnis mit Unterstrich oder Sternchen: `_kursiv_` oder `*kursiv*`
 
@@ -181,6 +181,8 @@ Um ein Wort oder einen Satz als Code zu kennzeichnen, wird es in Backticks (`) e
 
 `Dies ist ein Code`
 
+---
+
 Blöcke
 ===
 
@@ -194,6 +196,8 @@ Dieser Block soll in rotem Text erscheinen.
 Dieser Block soll einen hellblauen Hintergrund haben
 ```
 
+Ergebnis:
+
 <!-- style="color: red" -->
 Dieser Block soll in rotem Text erscheinen.
 
@@ -202,37 +206,159 @@ Dieser Block soll einen hellblauen Hintergrund haben
 
 ## A.3 Listen
 
+Unsortierte Listen können mit `-` oder `*` erzeugt werden.
+
+Für jede weitere Ebene `Leerzeile + Leerzeichen`
+
 - 2 Karotte(n)
 - 1 Zwiebel(- n)
 - 3 Tomate(n)
 - evtl. Kräuter
 
-  1. frisch
-  2. getrocknet
+  - frisch
+  - getrocknet
 
-     - next
+    - next
        
-       - next next
+      - next next
 
 - Salz und Pfeffer
 - Paprikapulver
-- 1 EL Olivenöl 
+- 1 EL Olivenöl
 
+---
+
+Sortierte Listen entstehen nach mit `Ziffer + .`
+
+1. dies
+2. das
+3. und jenes
+10. **Wir müssen selbst auf die korrekte Nummerierung aufpassen!**
 
 
 ## A.4 Tabellen
 
-Nährwerte pro Portion: kcal 160
+Für Tabellen gelten die gängigen Markdownregeln:
 
-<!-- data-transpose style="color: red" -->
+```markdown
+
+| Header 1   | Header 2   | Header 3   |
+| :--------- | ---------: | :--------: |
+| Item 1     | Item 2     | Item 3     |
+
+``` 
+
+\
+
+Die Ausrichtung des Textes in den Spalten:
+
+- links ⟶ `:---` oder `---` (default)
+- rechts ⟶ `---:`
+- zentriert ⟶ `:---:`
+
+\
+
+**Ergebnis:**
+
+| Header 1   | Header 2   | Header 3   |
+| :--------- | ---------: | :--------: |
+| Item 1     | Item 2     | Item 3     |
+
+---
+
+Wenn Liascript merkt, dass Werte in der Tabelle stehen, bietet es an, die Werte als Diagramm darzustellen:
+
 | Stoff       | Gramm       |
 | ----------- | ----------- |
 | ~~Eiweiß~~  | 6.31 g      |
 | Fett        | 2.75 g      |
-| Kohlenhydr. | **26.48 g** | 
+| Kohlenhydr. | **26.48 g** |
+
+\
+
+Wenn dies nicht gewünscht ist `<!-- data-type="none" -->` oberhalb der Tabelle. Im selben Kommentar kann man Styles definieren.
+
+```markdown
+<!-- data-type="none" style="width: 40%" -->
+| Stoff       | Gramm       |
+| ----------- | ----------- |
+| ~~Eiweiß~~  | 6.31 g      |
+| Fett        | 2.75 g      |
+| Kohlenhydr. | **26.48 g** |
+```
+
+wird zu:
+
+<!-- data-type="none" style="width: 40%" -->
+| Stoff       | Gramm       |
+| ----------- | ----------- |
+| ~~Eiweiß~~  | 6.31 g      |
+| Fett        | 2.75 g      |
+| Kohlenhydr. | **26.48 g** |
+
+## A.5 Diagramme
+
+Wie wir eben schon gesehen haben bietet Liascript automatisch Diagramme an, wenn Werte in Tabellen stehen.
 
 
-## A.5 Hervorhebung und hevorgehobene Zitate
+|   x | dots |
+| ---:| ----:|
+|   0 |    0 |
+|  10 |    2 |
+|  20 |    4 |
+|  30 |    6 |
+
+
+Diagramme können aber auch "gezeichnet" werden:
+
+    9 |                                       (* dots)
+      |
+    y |                              *
+    - |
+    a |                    *
+    x |
+    i |          *
+    s |
+      |*
+    0 +------------------------------------
+      0            x-axis                 36
+
+Dabei können auch mehrere Datenreihen eingetragen werden:
+
+    9 |                                       (* Sternchen)
+      |          +                            (+ Plus)
+    y |    b      B       B             *     (b b) 
+    - |         b      B       B              (r r) 
+    a |                b    *                 (R R) 
+    x |                 +                     (B B)
+    i |          *         r       R
+    s |       +    r             R
+      |*  + r *             R         R
+    0 +------------------------------------
+      0            x-axis                 36
+
+\
+\
+
+Die Ausrichtungen der Daten haben Einfluß auf die Darstellung:
+
+| Eiweis | Fett | Kohlehydr. |
+| :----- | :--- | :--------- |
+| 1      | 2    | 3          |
+
+---
+
+Mit `<!-- data-transpose -->` drehen:
+
+<!-- data-transpose style="width: 40%" -->
+| Stoff       | Gramm       |
+| ----------- | ----------- |
+| ~~Eiweiß~~  | 6.31 g      |
+| Fett        | 2.75 g      |
+| Kohlenhydr. | **26.48 g** |
+
+
+## A.6 Hervorhebung und hevorgehobene Zitate
 
 >Die **schleswig-holsteinische Landesinitiative zum FDM** fördert kooperative Lösungen und ermöglicht eine effektive Koordination, Vermittlung von Kompetenzen und Schaffung gemeinsamer Strukturen im Umgang mit Forschungsdaten. Im partnerschaftlichen Engagement sollen Wege gefunden werden, um das zeitgemäße Forschungsdatenmanagement vor Ort gemeinsam zu bewältigen und dabei Know-how und Ressourcen zu teilen.
 >
@@ -256,11 +382,11 @@ Nährwerte pro Portion: kcal 160
 
 # B. Animationen
 
-Animationsschritte werden mit `{{Nummer Animationsschritt}}`notiert. 
+Animationsschritte werden mit `{{Nummer Animationsschritt}}`notiert.
 
 **Achtung!** Die Animationen werden in der Ansicht "Textbook" nicht als Animationen angezeigt.
 
-Animationsschritte können ineinander verschachtelt werden. 
+Animationsschritte können ineinander verschachtelt werden.
 
 Hier ein Beispiel:
 
@@ -335,23 +461,23 @@ Wir können auch Inline {5}{animieren}.
 # B.1 Animationen mit Sprachausgabe
 
 {{|>}}
-> Achtung! Jetzt gut aufpassen! 
+> Achtung! Jetzt gut aufpassen!
 
-LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--` 
+LiaScript ermöglicht eine automatische Sprachausgabe bei Annimationsschritten. Hierfür wird die Notation für die Animationen um zwei Minuse am Begin und am Ende der Notation ergänzt: `--{{Nummer Animationsschritt}}--`
 
 
 ___Hier ein Beispiel:___
 
-{{0}}
->**F**indable
-
 {{1}}
-***************
-Der erste Schritt bei der (Wieder-)Verwendung von Daten besteht darin, sie zu finden. Metadaten und Daten sollten sowohl für Menschen als auch für Computer leicht zu finden sein. Maschinenlesbare Metadaten sind für das automatische Auffinden von Datensätzen und Diensten unerlässlich und daher ein wesentlicher Bestandteil des FAIRification-Prozesses.
-***************
+>**F**indable
 
 {{2}}
 ***************
+Der erste Schritt bei der (Wieder-)Verwendung von Daten besteht darin, sie zu finden. Metadaten und Daten sollten sowohl für Menschen als auch für Computer leicht zu finden sein. Maschinenlesbare Metadaten sind für das automatische Auffinden von Datensätzen und Diensten unerlässlich und daher ein wesentlicher Bestandteil des FAIRification-Prozesses.
+***************
+
+{{3}}
+***************
 
 F1: (Meta)data are assigned a globally unique and persistent identifier
 
@@ -363,18 +489,17 @@ F4: (Meta)data are registered or indexed in a searchable resource
 
 ***************
 
---{{0}}--
+--{{1 UK English Female}}--
 **F**indable
 
---{{1}}--
+--{{2}}--
 Der erste Schritt bei der (Wieder-)Verwendung von Daten besteht darin, sie zu finden. Metadaten und Daten sollten sowohl für Menschen als auch für Computer leicht zu finden sein. Maschinenlesbare Metadaten sind für das automatische Auffinden von Datensätzen und Diensten unerlässlich und daher ein wesentlicher Bestandteil des FAIRification-Prozesses.
 
---{{2 US English Male}}--
+--{{3 UK English Female}}--
 F1: (Meta)data are assigned a globally unique and persistent identifier
 F2: Data are described with rich metadata (defined by R1 below)
 F3: Metadata clearly and explicitly include the identifier of the data they describe
 F4: (Meta)data are registered or indexed in a searchable resource
-
 
 
 # C. Verweise
@@ -408,7 +533,7 @@ Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 
 ?[Teddybears - Sunshine](https://soundcloud.com/user34473679/sets/teddybears-sunshine)
 
-
+??[DINI Zertifikat](https://creators.spotify.com/pod/profile/dinitus/episodes/Das-DINI-Zertifikat-e37ctsa)
 
 ## C.4 Videos 
 
@@ -432,12 +557,14 @@ Weiter geht es mit den [Verweisen auf Bilder](#C.2-Bilder)
 <iframe src="https://macau.uni-kiel.de/content/index.xml" width="100%" height="600" style="border:1px solid black;">
 </iframe>
 
+--- 
+
 <iframe src="https://answergarden.ch/embed/4191023" width="100%" height="600px" style="border: none;" scrolling="no" frameborder="0" title="AnswerGarden" allowTransparency="true"><p><a href="https://answergarden.ch/4191023">Go to AnswerGarden</a></p></iframe>
+
+---
 
 <iframe src="https://umap.openstreetmap.de/de/map/new/?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=true&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#10/54.3526/10.1129" width="100%" height="600" style="border:1px solid black;">
 </iframe>
-
-
 
 
 # D. Fragen und Quizze

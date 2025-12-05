@@ -12,7 +12,7 @@ icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.pn
 link: https://raw.githubusercontent.com/RDM4CAU/Intro-to-RDM/refs/heads/main/cau-style.css
 -->
 
-# Einführung in LiaScript 
+# Einführung in LiaScript
 
 >**Nachhaltige Open Educational Resources mit LiaScript** 
 >

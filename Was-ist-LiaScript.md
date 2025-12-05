@@ -11,11 +11,9 @@ repository: https://github.com/RDM4CAU/LiaPlayground
 icon: https://raw.githubusercontent.com/RDM4CAU/TtL-FDM/main/images/fdm_lehre.png
 -->
 
-# LiaScript Einstieg 
+# LiaScript Einstieg
 
 ## Vision
-
-
 
      {{0-3}}
 ******************
@@ -77,14 +75,12 @@ style="width: 100%; max-width: 860px; display: block; margin-left: auto; margin-
 > -- UNESCO 2002 Forum on the Impact of Open Courseware for Higher Education in Developing Countries [(Link)](https://unesdoc.unesco.org/ark:/48223/pf0000128515)
 
 
-  
-
 {{1-2}}
 ******************
 
 | Anforderung                  | Bedeutung                                  |
 | ---------------------------- | ------------------------------------------ |
-| `verwahren/vervielfältigen ` | Download, Speicherung und Vervielfältigung |
+| `verwahren/vervielfältigen` | Download, Speicherung und Vervielfältigung |
 | `verwenden`                  | Nutzung im Lernkontext                     |
 | `verarbeiten`                | Umgestaltung und Adaption                  |
 | `vermischen`                 | Kombination und Extraktion                 |
@@ -111,7 +107,6 @@ Die Praxis besteht oft auf statische, nicht-interaktive und schwer veränderbare
 
 ![PDF](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/195px-PDF_file_icon.svg.png) ![Prezi](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Prezi_logo_transparent_2012.svg/240px-Prezi_logo_transparent_2012.svg.png) ![Powerpoint](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Microsoft_PowerPoint_2013-2019_logo.svg/264px-Microsoft_PowerPoint_2013-2019_logo.svg.png)
 
-
 ## Anforderungen
 
 {{1-3}}
@@ -119,7 +114,7 @@ Die Praxis besteht oft auf statische, nicht-interaktive und schwer veränderbare
 
 Um die OER Anforderungen umzusetzen, werden folgende Anforderungen an Lehr- und Lernmaterialien gestellt.
 
-> 1. Materialien müssen transformierbar sein, um eine Wiederverwendung zu ermöglichen. (_Verarbeiten/Verwenden/Verbreiten_)
+> 1. Materialien müssen rechtssicher transformierbar sein, um eine Wiederverwendung zu ermöglichen. (_Verarbeiten/Verwenden/Verbreiten_)
 > 2. Materialien brauchen Metadaten, um auffindbar zu sein. (_Verbreiten_)
 > 3. Materialien brauchen offenkundige Versionierungen (_Verwalten_)
 
@@ -134,9 +129,9 @@ __Offensichtlich brauchen wir Formate, die neben den positiven Aspekten von Text
 **********************
 LiaScript ist eine freie Erweiterung der Auszeichnungssprache [Markdown](https://de.wikipedia.org/wiki/Markdown). Die Entwickler:innen von LiaScript haben sich an GitHub Flavored Markdown orientiert und dieses um Funktionen erweitert, die einen erweiterten Einsatz von Multimedia sowie verschiedene Interaktionen mit Nutzenden ermöglichen. Mit LiaScript lassen sich interaktive und ansprechende Lehr- und Lehrinhalte erstellen, die ohne die Verwendung eines Servers im Netz verbreitet werden können.
 
-**Die Sytax, die von Markdown schon bekannt ist, könnt Ihr also auch hier anwenden - mit kleinen Abweichungen und einigen Erweiterungen. :-D** 
+**Die Sytax, die von Markdown schon bekannt ist, könnt Ihr also auch hier anwenden - mit kleinen Abweichungen und einigen Erweiterungen. :-D**
 
--> LiaScript-Dokumente sind Textdokumente, deren Inhalt auch von einfachsten Texteditoren gelesen werden können. 
+-> LiaScript-Dokumente sind Textdokumente, deren Inhalt auch von einfachsten Texteditoren gelesen werden können.
 
 **********************
 
@@ -156,7 +151,7 @@ LiaScript erfüllt die oben genannten Anforderungen:
 Und weitere:
 
 > 1. Einfache Syntax (_Verarbeiten/Vermischen/Verbreiten_)
-> 2. Serverloses Hosten (_Verbreiten_) 
+> 2. Serverloses Hosten (_Verbreiten_)
 > 3. Multimedialität und Interaktivität durch Medien und interaktive Elemente  (_Education_)
 
 **********************
